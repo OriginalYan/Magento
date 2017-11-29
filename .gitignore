@@ -1,3 +1,4 @@
+/app/etc/env.php
 /var/*
 !/var/.htaccess
 /vendor
