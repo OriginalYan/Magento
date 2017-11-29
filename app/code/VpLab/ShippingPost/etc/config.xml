@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <simple_post>
+                <active>0</active>
+                <title>Dummy Shipping around Russia</title>
+                <model>VpLab\ShippingPost\Model\Carrier</model>
+                <specificerrmsg>This shipping method is currently unavailable. If you would like to ship using this shipping method, please contact us.</specificerrmsg>
+                <price>0</price>
+                <min_price>2000</min_price>
+            </simple_post>
+        </carriers>
+    </default>
+</config>

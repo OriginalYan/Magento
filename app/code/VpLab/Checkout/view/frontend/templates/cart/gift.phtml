@@ -1,0 +1,87 @@
+<?php
+
+// Gift selection for Shopping Cart
+$is_enable = $block->isGiftEnable();
+if ($is_enable) {
+    $collection = $block->getGiftProducts();
+} else {
+    $collection = [];
+}
+
+$helper = \Magento\Framework\App\ObjectManager::getInstance()->get('Magento\Checkout\Helper\Cart');
+
+?>
+
+<div class="c-gift">
+    <div class="c-gift__block">
+        <div class="c-gift__title">
+            <?php echo __('CHOOSE YOUR PRESENT') ?><br />
+            <span class="c-gift__subtitle"><?php echo __('(for any order over €30)') ?></span>:
+        </div>
+        <div class="c-gift__content">
+            <div class="fieldset">
+                <div class="field">
+                    <div class="control">
+                        <select name="gift" id="id_gift" class="c-gift__select"<?php echo ($is_enable ? '' : ' disabled="true"') ?>>
+                            <option value=""><?php echo __('--- choose a gift ---') ?></option>
+                            <?php if ($is_enable) : ?>
+                                <?php foreach ($collection as $product) : ?>
+                                    <option value="<?php echo $helper->getAddUrl($product) ?>" data-pk="<?php echo $product->getId() ?>"><?php echo $product->getName() ?></option>
+                                <?php endforeach ?>
+                            <?php endif ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="c-gift__actions actions-toolbar">
+                    <div class="primary">
+                        <button class="action primary" type="button" value="<?php echo __('Add to Cart') ?>" onclick="addGiftToCart()"<?php echo ($is_enable ? '' : ' disabled="true"') ?>>
+                            <span><?php echo __('Add to Cart') ?></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-gift__note">
+            <?php echo __('Choose sample you want and click the button &laquo;Add to Cart&raquo;') ?>
+        </div>
+    </div>
+</div>
+
+<?php if ($is_enable) : ?>
+    <script type="application/javascript">
+        function addGiftToCart() {
+            event.preventDefault();
+            var $e = jQuery('#id_gift');
+            var url = $e.val();
+            if (!url) return;
+            var formKey = jQuery.cookie("form_key");
+            url += 'form_key/' + formKey;
+
+            // add options
+            var formData = new FormData();
+            formData.append("product", $e.data('pk'));
+            formData.append("selected_configurable_option", "");
+            formData.append("related_product", "");
+            formData.append("form_key", formKey);
+            formData.append("qty", 1);
+
+            // make POST call with the custom options as body element
+            var request = jQuery.ajax({
+                url: url,
+                method: "POST",
+                processData: false,
+                contentType: false,
+                data: formData,
+                showLoader: true
+            }).done(function(data) {
+                if (data && data.backUrl) {
+                    window.location.assign(data.backUrl);
+                } else {
+                    window.location.reload();
+                }
+            }).fail(function(jqXHR, textStatus) {
+                console.log("Couldn't add product to cart. " + textStatus);
+            });
+        }
+    </script>
+<?php endif ?>

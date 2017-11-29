@@ -1,0 +1,20 @@
+<?php
+
+/**
+ * @var VpLab/Catalog/Block/Product/View/GoogleTag
+ */
+
+$product = $this->getProduct();
+
+?>
+<?php if ($product) : ?>
+<script>
+if (gtm_details === undefined)gtm_details=[];
+gtm_details.push({
+    'name': '<?= $product->getName() ?>',
+    'id': <?= $product->getId() ?>,
+    'price': '<?= $this->getProductPriceForGA() ?>',
+    'category': '<?= $this->getCategoryPath() ?>',
+});
+</script>
+<?php endif ?>

@@ -1,0 +1,13 @@
+<?php
+
+// Tip for Shopping Cart
+
+$subtotal = $block->getSubTotal();
+
+?>
+
+<?php if ($subtotal > 0 and $subtotal < $block::$FREE_DELIVERY_MIN_AMOUNT) : ?>
+    <div class="alert alert-warning o-cart-tip">
+        <p><?php echo __("Free Shipping for all Orders Over €60") ?></p>
+    </div>
+<?php endif ?>

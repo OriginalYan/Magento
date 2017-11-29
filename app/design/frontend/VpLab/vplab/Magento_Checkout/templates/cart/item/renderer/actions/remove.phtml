@@ -1,0 +1,26 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var $block \Magento\Checkout\Block\Cart\Item\Renderer\Actions\Remove */
+
+$_googleTagsHelper = $this->helper('VpLab\Catalog\Helper\GoogleTags');
+
+$_item = $block->getItem();
+$_product = $_item->getProduct();
+$ga_category = $_googleTagsHelper->getCategoryPath($_product);
+
+?>
+<a href="#"
+   title="<?php echo $block->escapeHtml(__('Remove item')); ?>"
+   class="action action-delete"
+   data-post='<?php /* @escapeNotVerified */ echo $block->getDeletePostJson(); ?>'
+   onclick="gtm_del_cart_click('<?= $_product->getId() ?>', '<?= $_product->getName() ?>', '<?= number_format($_item->getRowTotal(), 2, '.', '') ?>', '<?= $_item->getData('qty') ?>', '<?= $ga_category ?>')">
+    <span>
+        <?php /* @escapeNotVerified */ echo __('Remove item')?>
+    </span>
+</a>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Magento/Widget/etc/widget.xsd">
+    <widget id="vplab_bannerwidget" class="VpLab\BannerWidget\Block\Widget\SlideItem">
+        <label translate="true">Slider Item Widget</label>
+        <description>Slider item for Home page</description>
+        <parameters>
+            <parameter name="url" xsi:type="text"  visible="true" sort_order="0" >
+                <label translate="true">URL</label>
+            </parameter>
+            <parameter name="image" xsi:type="text"  visible="true" sort_order="10" >
+                <label translate="true">Image</label>
+            </parameter>
+        </parameters>
+    </widget>
+    <widget id="vplab_sidebarwidget" class="VpLab\BannerWidget\Block\Widget\SideBarItem">
+        <label translate="true">SideBar Banner Widget</label>
+        <description>SideBar Banner for Home page</description>
+        <parameters>
+            <parameter name="url" xsi:type="text" visible="true" sort_order="0">
+                <label translate="true">URL</label>
+            </parameter>
+            <parameter name="image" xsi:type="text" visible="true" sort_order="10">
+                <label translate="true">Image</label>
+            </parameter>
+            <parameter name="className" xsi:type="text" visible="true" sort_order="20">
+                <label translate="true">Class</label>
+            </parameter>
+            <parameter name="headerText" xsi:type="text" visible="true" sort_order="30">
+                <label translate="true">Text for header</label>
+            </parameter>
+            <parameter name="buttonText" xsi:type="text" visible="true" sort_order="40">
+                <label translate="true">Text for Button</label>
+            </parameter>
+            <parameter name="altText" xsi:type="text" visible="true" sort_order="40">
+                <label translate="true">Alt for Image</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

@@ -1,0 +1,40 @@
+<script>
+function isEmpty(obj) {
+    for(var key in obj) {
+        if(obj.hasOwnProperty(key))
+            return false;
+    }
+    return true;
+}
+ecommerce = {};
+if (typeof gtm_impressions != "undefined" && gtm_impressions.length > 0) {
+    ecommerce['currencyCode'] = '<?= $this->getCurrencyCode() ?>';
+    ecommerce['impressions'] = gtm_impressions;
+}
+if (typeof gtm_details != "undefined" && gtm_details.length > 0) {
+    ecommerce['detail'] = {
+        'products': gtm_details
+    };
+}
+if (typeof gtm_promos != "undefined" && gtm_promos.length > 0) {
+    ecommerce['promoView'] = {
+        'promotions': gtm_promos
+    };
+}
+if (typeof gtm_purchases != "undefined") {
+    ecommerce['purchase'] = gtm_purchases;
+}
+if (!isEmpty(ecommerce)) {
+    dataLayer.push({
+        'ecommerce': ecommerce
+    });
+}
+// console.log(dataLayer);
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PKTMXH6');</script>
+<!-- End Google Tag Manager -->

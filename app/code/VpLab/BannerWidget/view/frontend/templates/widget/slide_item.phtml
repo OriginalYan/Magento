@@ -1,0 +1,42 @@
+<?php
+
+// @block  \VpLab\BannerWidget\Block\Widget\SlideItem.php
+
+$url = trim($this->getData('url'));
+$image = trim($this->getData('image'));
+
+$gtm_id = trim($this->getData('gtm_id'));
+$gtm_name = trim($this->getData('gtm_name'));
+$gtm_creative = trim($this->getData('gtm_creative'));
+$gtm_position = trim($this->getData('gtm_position'));
+
+$no_button = intval($this->getData('no_button')) > 0;
+
+$_on_click = 'onclick="return gtm_promo_click(\'' . $gtm_id . '\', \'' . $gtm_name . '\', \'' . $gtm_creative . '\', \'' . $gtm_position . '\', \'' . $url . '\')"';
+
+?>
+<?php if ($url or $image): ?>
+    <div class="item">
+        <?php if ($image) : ?>
+            <?= ($url ? '<a href="' . $url . '"' . $_on_click . '>' : '<div>') ?>
+                <img src="<?= $image ?>" alt="" />
+            <?= ($url ? '</a>' : '</div>') ?>
+        <?php endif ?>
+        <?php if ($url) : ?>
+            <a href="<?= $url ?>" class="content hidden-xs" <?= $_on_click ?> style="position:absolute;width:100%;height:100%;left:0;top:0;display:block">
+        <?php else: ?>
+            <div class="content hidden-xs" style="position:absolute;width:100%;height:100%;left:0;top:0">
+        <?php endif ?>
+        <?php if (!$no_button) : ?>
+            <div class="text-area hidden-xs" style="position:absolute; top:70%; left:50%">
+                <div style="position:relative; left:-50%;">
+                    <a href="<?= ($url?:'#') ?>" <?= $_on_click ?> class="btn btn-default btn-lg" style="background:#000;border:#000;color:#fff; border-radius:2px;padding-left:30px;padding-right:30px;">КУПИТЬ</a>
+                </div>
+            </div>
+        <?php endif ?>
+        <?= ($url ? '</a>' : '</div>') ?>
+        <script>
+        gtm_promos.push({'id': '<?= $gtm_id ?>', 'name': '<?= $gtm_name ?>', 'creative': '<?= $gtm_creative ?>', 'position': '<?= $gtm_position ?>'});
+        </script>
+    </div>
+<?php endif ?>

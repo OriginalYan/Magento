@@ -1,0 +1,33 @@
+{
+    "name": "etws/magento-language-ru_ru",
+    "description": "Russian Language Pack for Magento 2",
+    "keywords": [
+        "magento2",
+        "translation"
+    ],
+    "type": "magento2-language",
+    "version": "1.1.0",
+    "license": [
+        "EFL1"
+    ],
+    "authors":[
+        {
+            "name":"ET Web Solutions",
+            "email": "support@etwebsolutions.com",
+            "homepage": "http://www.etwebsolutions.com/"
+        }
+    ],
+    "support": {
+        "email": "support@etwebsolutions.com",
+        "issues": "https://bitbucket.org/etws/m2_russianlanguagepack/issues",
+        "source": "https://bitbucket.org/etws/m2_russianlanguagepack/src"
+    },
+    "require": {
+        "magento/framework": "100.*.*"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+<?php
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$category = $objectManager->get('Magento\Framework\Registry')->registry('current_category');
+
+if ($category) :
+    $categoryHelper = $this->helper('Magento\Catalog\Helper\Category');
+
+    $subcategories=$category->getCategories($category->getId());
+    if ($subcategories->count() > 0):
+?>
+        <div id="category-list" data-role="content" data-mage-init='{"accordion":{"openedState": "active", "collapsible": true, "active": [], "multipleCollapsible": true}}'>
+            <div class="filter-options-item allow active" data-role="collapsible" role="presentation" data-collapsible="true">
+                <div class="filter-options-title" data-role="title" role="tab" aria-selected="false" aria-expanded="true" tabindex="0">
+                    <strong><?= $category->getName() ?></strong>
+                </div>
+                <div class="filter-options-content" data-role="content" role="tabpanel" aria-hidden="true">
+                    <ol class="items">
+<?php
+        foreach ($subcategories as $subcategory) :
+            if (!$subcategory->getIsActive()) {
+                continue;
+            }
+?>
+                        <li class="item">
+                            <a href="<?= $categoryHelper->getCategoryUrl($subcategory) ?>"><?= $subcategory->getName() ?></a>
+                        </li>
+        <?php endforeach ?>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/x-magento-init">
+            {
+				"#category-list": {
+                    "accordion": {
+                        "openedState": "active",
+                        "collapsible": true,
+                        "active": [],
+                        "multipleCollapsible": true
+                    },
+                    "Mageplaza_LayeredNavigation/js/layer": {}
+                }
+            }
+        </script>
+
+
+
+    <?php endif ?>
+<?php endif ?>

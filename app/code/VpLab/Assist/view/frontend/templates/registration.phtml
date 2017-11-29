@@ -1,0 +1,23 @@
+<?php
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+?>
+
+<?php if ($block->getEmailAddress()) : ?>
+    <div id="registration">
+        <br />
+
+        <p><?php echo __('You can track your order status by creating an account.') ?></p>
+        <p><span><?php echo __('Email Address') ?></span>: <span><?php echo $block->getEmailAddress() ?></span></p>
+
+        <div class="actions-toolbar">
+            <div class="primary">
+                <a class="action primary continue" href="<?php echo $block->getCreateAccountUrl() ?>"><span><?php echo __('Create an Account') ?></span></a>
+            </div>
+        </div>
+    </div>
+<?php endif ?>

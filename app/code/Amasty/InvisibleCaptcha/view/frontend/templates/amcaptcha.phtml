@@ -1,0 +1,59 @@
+<?php
+/**
+ * @author Amasty Team
+ * @copyright Copyright (c) 2017 Amasty (https://www.amasty.com)
+ * @package Amasty_InvisibleCaptcha
+ */
+?>
+<?php
+/**
+ *
+ * @see \Amasty\InvisibleCaptcha\Block\Captcha
+ * @var \Amasty\InvisibleCaptcha\Block\Captcha $block
+ */
+?>
+<?php if ($block->isModuleOn()) : ?>
+    <script type="text/javascript">
+        require(['jquery'], function ($) {
+            formsToProtect = <?php echo $block->getCaptchaSelectorsJson() ?>;
+            formsToProtect.forEach(function(item) {
+                formToProtect = $(item)[0];
+                if (formToProtect) {
+                    window.formToProtectOnPage = formToProtect;
+                    return;
+                }
+            });
+            if (window.formToProtectOnPage) {
+                var recaptchaScript = document.createElement('script');
+                recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit';
+                recaptchaScript.attributes = 'async defer';
+                document.body.appendChild(recaptchaScript);
+            }
+        });
+
+        var onSubmit = function (token) {
+            if (window.validationForInvisibleCaptchaForm.valid()){
+                document.getElementById('amasty_invisible_token').setAttribute('value', token);
+                document.getElementById('amasty_invisible_token').form.submit();
+            } else {
+                grecaptcha.reset();
+            }
+        };
+
+        var onloadCallback = function () {
+            window.formToProtectOnPage.innerHTML +=
+                '<input type="hidden" id="amasty_invisible_token" name="amasty_invisible_token" value=""/>';
+            require(['jquery', 'mage/mage'], function ($) {
+                window.validationForInvisibleCaptchaForm = $('#' + window.formToProtectOnPage.id);
+            });
+            var id = "<?php echo $block->getData('id'); ?>";
+            if (!id) {
+                id = document.getElementById('amasty_invisible_token').form.querySelector("[type='submit']");
+            }
+            grecaptcha.render(id, {
+                'sitekey': '<?php echo $block->getSiteKey(); ?>',
+                'callback': onSubmit
+            });
+        };
+    </script>
+<?php endif; ?>

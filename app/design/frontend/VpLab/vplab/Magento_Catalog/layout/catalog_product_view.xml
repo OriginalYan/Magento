@@ -1,0 +1,74 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="product.info.main">
+            <block class="Magento\Catalog\Block\Product\View\Description" name="product.info.annotation" template="product/view/attribute.phtml" before="-">
+                <arguments>
+                    <argument name="at_call" xsi:type="string">getAnnotation</argument>
+                    <argument name="at_code" xsi:type="string">annotation</argument>
+                    <argument name="css_class" xsi:type="string">annotation</argument>
+                    <argument name="at_label" translate="true" xsi:type="string">none</argument>
+                    <argument name="title" translate="true" xsi:type="string">Annotation</argument>
+                    <argument name="add_attribute" xsi:type="string">itemprop="annotation"</argument>
+                </arguments>
+            </block>
+
+            <block class="VpLab\Catalog\Block\Product\View\GoogleTag" name="google.tag.detail" template="product/view/google-tag.phtml" after="product.info.annotation"/>
+
+            <block class="VpLab\Catalog\Block\Product\View\Option" name="product.info.flavour" template="product/view/option.phtml" before='product.info'>
+                <arguments>
+                    <argument name="at_call" xsi:type="string">getFlavour</argument>
+                    <argument name="at_code" xsi:type="string">flavour</argument>
+                    <argument name="css_class" xsi:type="string">flavour</argument>
+                    <argument name="at_type" xsi:type="string">dropdown</argument>
+                    <argument name="at_label" translate="true" xsi:type="string">default</argument>
+                    <argument name="add_attribute" xsi:type="string">itemprop="flavour"</argument>
+                </arguments>
+            </block>
+
+            <block class="VpLab\Catalog\Block\Product\View\Option" name="product.info.package" template="product/view/option.phtml" after='product.info.flavour'>
+                <arguments>
+                    <argument name="at_call" xsi:type="string">getPackage</argument>
+                    <argument name="at_code" xsi:type="string">package</argument>
+                    <argument name="css_class" xsi:type="string">package</argument>
+                    <argument name="at_type" xsi:type="string">dropdown</argument>
+                    <argument name="at_label" translate="true" xsi:type="string">default</argument>
+                    <argument name="add_attribute" xsi:type="string">itemprop="package"</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+
+        <referenceContainer name="product.info.form.content">
+            <container name="product.info.price.form" label="Product info auxiliary container" htmlTag="div" htmlClass="product-info-price" before="product.info.addtocart">
+                <block class="Magento\Catalog\Pricing\Render" name="product.price.final.form">
+                    <arguments>
+                        <argument name="price_render" xsi:type="string">product.price.render.default</argument>
+                        <argument name="price_type_code" xsi:type="string">final_price</argument>
+                        <argument name="zone" xsi:type="string">item_view</argument>
+                    </arguments>
+                </block>
+                <container name="product.info.stock.sku.form" after="product.price.final.form" label="Product auxiliary info" htmlTag="div" htmlClass="product-info-stock-sku">
+                    <block class="Magento\Catalog\Block\Product\View\Type\Simple" name="product.info.type.form" before="-" template="product/view/type/default.phtml"/>
+                </container>
+            </container>
+
+            <container name="product.info.social.form" label="Product social links container" htmlTag="div" htmlClass="product-social-links" after="product.info.addtocart">
+                <block class="Magento\Wishlist\Block\Catalog\Product\View\AddTo\Wishlist" name="view.addto.wishlist.form" before="-"
+                       template="Magento_Wishlist::catalog/product/view/addto/wishlist.phtml" />
+                <block class="Magento\Catalog\Block\Product\View" name="product.info.addto.form" as="addto" template="product/view/addto.phtml">
+                    <block class="Magento\Catalog\Block\Product\View\AddTo\Compare" name="view.addto.compare.form" after="view.addto.wishlist"
+                           template="Magento_Catalog::product/view/addto/compare.phtml" />
+                </block>
+                <block class="Magento\Catalog\Block\Product\View" name="product.info.mailto.form" template="product/view/mailto.phtml"/>
+            </container>
+
+        </referenceContainer>
+
+        <move element="product.info.price" destination="product.info.form.options" after="product.info.options.wrapper"/>
+        <move element="product.info.social" destination="product.info.options.wrapper.bottom" after="product.info.addtocart.additional"/>
+
+        <move element="product.info.overview" destination="product.info.main" before="product.info.extrahint"/>
+        <move element="product.info.review" destination="product.info.main" after="product.info.annotation"/>
+
+        <referenceBlock name="product.info.sku" remove="true"/>
+    </body>
+</page>

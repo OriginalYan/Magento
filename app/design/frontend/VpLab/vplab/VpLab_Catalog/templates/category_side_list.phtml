@@ -1,0 +1,34 @@
+<?php
+
+if (strpos($this->getRequest()->getOriginalPathInfo(), '/products.') === false) {
+    return;
+}
+
+$categories = $this->getStoreCategories(true,false,true);
+$categoryHelper = $this->getCategoryHelper();
+
+$result = '';
+foreach ($categories as $category) {
+    if (!$category->getIsActive() or $category->getData('url_key') != 'vplab-categories') {
+        continue;
+    }
+    $childrenCategories = $this->getChildCategories($category);
+    if (!$childrenCategories) {
+        continue;
+    }
+    $result .= '<div data-role="collapsible" data-collapsible="true" class="block block-category-list">';
+    $result .= '  <div data-role="title" role="tab" aria-selected="false" aria-expanded="false" tabindex="0" class="block-title"><strong>' . $category->getName() . '</strong></div>';
+    $result .= '  <div data-role="content" role="tabpanel" aria-hidden="true" class="block-content">';
+    $result .= '    <ol class="items">';
+    foreach ($childrenCategories as $childrenCategory) {
+        if (!$childrenCategory->getIsActive()) {
+            continue;
+        }
+        $result .= '<li class="item"><a href="' . $categoryHelper->getCategoryUrl($childrenCategory) . '">' . $childrenCategory->getName() . '</a></li>';
+    }
+    $result .= '    </ol>';
+    $result .= '  </div>';
+    $result .= '</div>';
+}
+
+print $result;

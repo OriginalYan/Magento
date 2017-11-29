@@ -1,0 +1,40 @@
+<?php
+
+// @block  \VpLab\BannerWidget\Block\Widget\SideBarItem.php
+
+$url = trim($this->getData('url'));
+$image = trim($this->getData('image'));
+$className = trim($this->getData('className'));
+$headerText = trim($this->getData('headerText'));
+$buttonText = trim($this->getData('buttonText'));
+$altText = trim($this->getData('altText'));
+
+$gtm_id = trim($this->getData('gtm_id'));
+$gtm_name = trim($this->getData('gtm_name'));
+$gtm_creative = trim($this->getData('gtm_creative'));
+$gtm_position = trim($this->getData('gtm_position'));
+
+$_on_click = 'onclick="return gtm_promo_click(\'' . $gtm_id . '\', \'' . $gtm_name . '\', \'' . $gtm_creative . '\', \'' . $gtm_position . '\', \'' . $url . '\')"';
+
+?>
+<?php if ($url or $image) : ?>
+    <div class="<?= $className ?>">
+        <?php if ($image) : ?>
+            <img src="<?= $image?>" alt="<?= $altText ?>" />
+        <?php endif ?>
+        <div class="content">
+            <?php if ($headerText) : ?>
+                <h2><?= $headerText ?></h2>
+            <?php endif ?>
+            <?php if ($buttonText) : ?>
+                <a class="btn btn-default" href="<?= ($url ?: '#') ?>" <?= $_on_click ?>><?= $buttonText ?></a>
+            <?php endif ?>
+        </div>
+        <?php if ($url) : ?>
+            <a href="<?= $url ?>" class="link"<?= $_on_click ?>></a>
+        <?php endif ?>
+    </div>
+    <script>
+    gtm_promos.push({'id': '<?= $gtm_id ?>', 'name': '<?= $gtm_name ?>', 'creative': '<?= $gtm_creative ?>', 'position': '<?= $gtm_position ?>'});
+    </script>
+<?php endif ?>

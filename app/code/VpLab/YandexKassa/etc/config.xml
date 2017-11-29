@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <vplab_yandex>
+                <active>1</active>
+                <model>VpLab\YandexKassa\Model\YandexKassa</model>
+                <title>Яндекс.Касса</title>
+                <title_backend>Yandex.Kassa</title_backend>
+
+                <shop_id />
+                <scid />
+                <shop_password backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+
+                <order_status>processing</order_status>
+                <inline>0</inline>
+                <min_order_total>0.01</min_order_total>
+                <allowspecific>0</allowspecific>
+                <redirect_url>vplab/yandex/redirect</redirect_url>
+                <check_url>vplab/yandex/check</check_url>
+                <success_url>vplab/yandex/success</success_url>
+                <cancel_url>vplab/yandex/error</cancel_url>
+                <notification_url>vplab/yandex/notify</notification_url>
+
+                <cgi_url>https://money.yandex.ru/eshop.xml</cgi_url>
+                <cgi_url_test>https://demomoney.yandex.ru/eshop.xml</cgi_url_test>
+
+                <currency>RUB</currency>
+                <require_billing_address>1</require_billing_address>
+                <payment_action>authorize_capture</payment_action>
+            </vplab_yandex>
+        </payment>
+    </default>
+</config>

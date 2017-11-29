@@ -1,0 +1,71 @@
+<?php
+/**
+ * Copyright © 2015 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+?>
+<form class="form contact"
+      action="<?php echo $block->getFormAction(); ?>"
+      id="contact-form"
+      method="post"
+      data-hasrequired="<?php echo __('* Required Fields') ?>"
+      data-mage-init='{"validation":{}}'>
+    <fieldset class="fieldset">
+        <legend class="legend"><span><b>Напишите нам</b></span></legend>
+        <br />
+        <fieldset class="fieldset row">
+            <div class="fields col-sm-6">
+                <div class="field name required">
+                    <label class="label" for="name"><span>Ваше имя</span></label>
+                    <div class="control">
+                        <input name="name" id="name" title="Ваше имя" value="<?php echo $block->escapeHtml($this->helper('Magento\Contact\Helper\Data')->getPostValue('name') ?: $this->helper('Magento\Contact\Helper\Data')->getUserName()) ?>" class="input-text" type="text" data-validate="{required:true}"/>
+                    </div>
+                </div>
+                <div class="field email required">
+                    <label class="label" for="email"><span><?php echo __('Email') ?></span></label>
+                    <div class="control">
+                        <input name="email" id="email" title="<?php echo __('Email') ?>" value="<?php echo $block->escapeHtml($this->helper('Magento\Contact\Helper\Data')->getPostValue('email') ?: $this->helper('Magento\Contact\Helper\Data')->getUserEmail()) ?>" class="input-text" type="email" data-validate="{required:true, 'validate-email':true}"/>
+                    </div>
+                </div>
+                <div class="field subject">
+                    <label for="subject" class="label"><span><?php echo __('Subject') ?></span></label>
+                    <div class="control">
+                        <input name="subject" id="subject" title="<?php echo __('Subject') ?>" value="<?php echo $block->escapeHtml($this->helper('Magento\Contact\Helper\Data')->getPostValue('subject')) ?>" class="input-text" type="text">
+                    </div>
+                </div>
+                <div class="field company">
+                    <label for="company" class="label"><span><?php echo __('Company') ?></span></label>
+                    <div class="control">
+                        <input name="company" id="company" title="<?php echo __('Company') ?>" value="<?php echo $block->escapeHtml($this->helper('Magento\Contact\Helper\Data')->getPostValue('company')) ?>" class="input-text" type="text">
+                    </div>
+                </div>
+                <div class="field telephone">
+                    <label class="label" for="telephone"><span>Номер телефона</span></label>
+                    <div class="control">
+                        <input name="telephone" id="telephone" title="Номер телефона" value="<?php echo $block->escapeHtml($this->helper('Magento\Contact\Helper\Data')->getPostValue('telephone')) ?>" class="input-text" type="text" />
+                    </div>
+                </div>
+            </div>
+            <div class="fields col-sm-6">
+                <div class="field comment required">
+                    <label class="label" for="comment"><span>Ваше сообщение</span></label>
+                    <div class="control">
+                        <textarea name="comment" id="comment" title="Ваше сообщение" class="input-text" cols="5" rows="17" data-validate="{required:true}"><?php echo $block->escapeHtml($this->helper('Magento\Contact\Helper\Data')->getPostValue('comment')) ?></textarea>
+                    </div>
+                </div>
+                <?php echo $block->getChildHtml('form.additional.info'); ?>
+            </div>
+        </fieldset>
+    </fieldset>
+    <div class="actions-toolbar">
+        <div class="primary">
+            <input type="hidden" name="hideit" id="hideit" value="" />
+            <button type="submit" title="<?php echo __('Submit') ?>" class="action submit primary">
+                <span><?php echo __('Submit') ?></span>
+            </button>
+        </div>
+    </div>
+</form>

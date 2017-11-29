@@ -1,0 +1,10 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="after.body.start">
+            <block class="Magento\Framework\View\Element\Template" name="google.tag.manager" before="-" template="VpLab_Catalog::html/tag-manager.phtml" />
+        </referenceContainer>
+        <referenceContainer name="before.body.end">
+            <block class="VpLab\Catalog\Block\GoogleTag" name="google.tag.close" template="VpLab_Catalog::html/google-tag-close.phtml"></block>
+        </referenceContainer>
+    </body>
+</page>

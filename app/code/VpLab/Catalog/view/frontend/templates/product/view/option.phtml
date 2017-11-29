@@ -1,0 +1,42 @@
+<?php
+
+/**
+ * Display Single option of product
+ *
+ * @var $block VpLab\Catalog\Block\Product\View\Option
+ */
+
+$_helper = $this->helper('Magento\Catalog\Helper\Output');
+$_product = $block->getProduct();
+$_call = $block->getAtCall();
+$_code = $block->getAtCode();
+$_className = $block->getCssClass();
+$_attributeLabel = $block->getAtLabel();
+$_attributeType = $block->getAtType();
+$_attributeAddAttribute = $block->getAddAttribute();
+
+if ($_attributeLabel and $_attributeLabel == 'default') {
+    $_attributeLabel = $_product->getResource()->getAttribute($_code)->getFrontendLabel();
+}
+if ($_attributeType and $_attributeType == 'text') {
+    $_attributeValue = ($_helper->productAttribute($_product, $_product->$_call(), $_code)) ? $_product->getAttributeText($_code) : '';
+} elseif ($_attributeType and $_attributeType == 'dropdown') {
+    $_attributeValue = $_product->getResource()->getAttribute($_code)->getFrontend()->getValue($_product);
+} else {
+    $_attributeValue = $_helper->productAttribute($_product, $_product->$_call(), $_code);
+}
+
+?>
+
+<?php if ($_attributeValue and $_attributeValue != 'No' and $_attributeValue != 'Нет'): ?>
+<div class="product-options-wrapper attribute <?= $_className ?>">
+    <div class="fieldset">
+        <div class="field">
+            <label class="label"><span><?= $_attributeLabel ?></span></label>
+            <div class="control">
+                <input type="text" value="<?= $_attributeValue ?>" readonly="readonly"/>
+            </div>
+        </div>
+    </div>
+</div>
+<?php endif; ?>

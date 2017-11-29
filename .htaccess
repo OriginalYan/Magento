@@ -1,0 +1,217 @@
+# All explanations you could find in .htaccess.sample file
+DirectoryIndex index.php
+<IfModule mod_php5.c>
+    php_value memory_limit 768M
+    php_value max_execution_time 18000
+    php_flag session.auto_start off
+    php_flag suhosin.session.cryptua off
+</IfModule>
+<IfModule mod_php7.c>
+    php_value memory_limit 768M
+    php_value max_execution_time 18000
+    php_flag session.auto_start off
+    php_flag suhosin.session.cryptua off
+</IfModule>
+<IfModule mod_security.c>
+    SecFilterEngine Off
+    SecFilterScanPOST Off
+</IfModule>
+<IfModule mod_ssl.c>
+    SSLOptions StdEnvVars
+</IfModule>
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine on
+    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+    RewriteCond %{REQUEST_METHOD} ^TRAC[EK]
+    RewriteRule .* - [L,R=405]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
+    RewriteRule .* index.php [L]
+</IfModule>
+    AddDefaultCharset Off
+    AddType 'text/html; charset=UTF-8' html
+<IfModule mod_expires.c>
+    ExpiresDefault "access plus 1 year"
+    ExpiresByType text/html A0
+    ExpiresByType text/plain A0
+</IfModule>
+    RedirectMatch 403 /\.git
+    <Files composer.json>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files composer.lock>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files .gitignore>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files .htaccess>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files .htaccess.sample>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files .php_cs>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files .travis.yml>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files CHANGELOG.md>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files CONTRIBUTING.md>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files COPYING.txt>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files Gruntfile.js>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files LICENSE.txt>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files LICENSE_AFL.txt>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files nginx.conf.sample>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files package.json>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files php.ini.sample>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files README.md>
+        order allow,deny
+        deny from all
+    </Files>
+    <Files magento_umask>
+        order allow,deny
+        deny from all
+    </Files>
+ErrorDocument 404 /pub/errors/404.php
+ErrorDocument 403 /pub/errors/404.php
+<IfModule mod_headers.c>
+    Header set X-UA-Compatible "IE=edge"
+    <FilesMatch "\.(appcache|atom|bbaw|bmp|crx|css|cur|eot|f4[abpv]|flv|geojson|gif|htc|ico|jpe?g|js|json(ld)?|m4[av]|manifest|map|mp4|oex|og[agv]|opus|otf|pdf|png|rdf|rss|safariextz|svgz?|swf|topojson|tt[cf]|txt|vcard|vcf|vtt|webapp|web[mp]|webmanifest|woff2?|xloc|xml|xpi)$">
+        Header unset X-UA-Compatible
+    </FilesMatch>
+</IfModule>
+
+Redirect 301  /about/  /about
+Redirect 301  /contacts/  /contact
+Redirect 301  /vplab-sports-nutrition/gainers/mass-builder/  /mass-builder.html
+Redirect 301  /vplab-sports-nutrition/proteins/pro5-protein/  /pro5-protein.html
+Redirect 301  /vplab-sports-nutrition/proteins/pure-iso-whey/  /pure-iso-whey.html
+Redirect 301  /vplab-sports-nutrition/proteins/100-platinum-whey/  /100-platinum-whey.html
+Redirect 301  /vplab-sports-nutrition/proteins/100-platinum-whey-2/  /100-platinum-whey.html
+Redirect 301  /vplab-sports-nutrition/proteins/100-platinum-casein/  /100-platinum-casein.html
+Redirect 301  /vplab-sports-nutrition/proteins/cola-protein/  /cola-protein.html
+Redirect 301  /vplab-sports-nutrition/proteins/juice-protein/  /juice-protein.html
+Redirect 301  /vplab-sports-nutrition/proteins/vegan-protein/  /vegan-protein.html
+Redirect 301  /vplab-sports-nutrition/proteins/lean-protein-shake/  /lean-protein-shake.html
+Redirect 301  /vplab-sports-nutrition/proteins/protein-spread/  /protein-spread.html
+Redirect 301  /vplab-sports-nutrition/amino-acids/amino-boost/  /amino-boost.html
+Redirect 301  /vplab-sports-nutrition/amino-acids/amino-liquid/  /amino-liquid.html
+Redirect 301  /vplab-sports-nutrition/amino-acids/amino-pro-9000/  /amino-pro-9000.html
+Redirect 301  /vplab-sports-nutrition/amino-acids/bcaa-chewable/  /bcaa-chewable.html
+Redirect 301  /vplab-sports-nutrition/amino-acids/new-generation-bcaa-with-l-glutamine/  /bcaa-8-1-1.html
+Redirect 301  /vplab-sports-nutrition/amino-acids/bcaa-ultra-pure-2/  /bcaa-ultra-pure.html
+Redirect 301  /vplab-sports-nutrition/amino-acids/l-glutamine/  /l-glutamine.html
+Redirect 301  /vplab-sports-nutrition/amino-acids/bcaa-211/  /bcaa-2-1-1.html
+Redirect 301  /vplab-sports-nutrition/amino-acids/bcaa-shot/  /bcaa-shot.html
+Redirect 301  /vplab-sports-nutrition/endurance-series/ultimate-amino/  /ultimate-amino.html
+Redirect 301  /vplab-sports-nutrition/creatine/pure-creatine/  /pure-creatine.html
+Redirect 301  /vplab-sports-nutrition/creatine/creatine-capsules/  /creatine-capsules.html
+Redirect 301  /vplab-sports-nutrition/testosterone/tribulus-terrestris/  /creatine-capsules.html
+Redirect 301  /vplab-sports-nutrition/energy-drinks/guarana-liquid/  /guarana-liquid.html
+Redirect 301  /vplab-sports-nutrition/energy-drinks/caffeine/  /caffeine.html
+Redirect 301  /vplab-sports-nutrition/joint-health/liquid-joint-formula/  /liquid-joint-formula.html
+Redirect 301  /vplab-sports-nutrition/joint-health/glucosamine-chondroitin-msm/  /glucosamine-chondroitin-msm.html
+Redirect 301  /vplab-sports-nutrition/vitamins-and-minerals/magnesium-vitamin-c/  /magnesium-vitamin-c.html
+Redirect 301  /vplab-sports-nutrition/vitamins-and-minerals/ultra-mens-sport/  /ultra-men-s-sport.html
+Redirect 301  /vplab-sports-nutrition/vitamins-and-minerals/ultra-womens/  /ultra-women-s.html
+Redirect 301  /vplab-sports-nutrition/vitamins-and-minerals/daily-1/  /daily-1.html
+Redirect 301  /vplab-sports-nutrition/vitamins-and-minerals/zma/  /zma.html
+Redirect 301  /vplab-sports-nutrition/fat-burners/lipojets/  /lipojets.html
+Redirect 301  /vplab-sports-nutrition/fat-burners/lipojets-carnitine/  /lipojets-carnitine.html
+Redirect 301  /vplab-sports-nutrition/l-carnitine/l-carnitine-concentrate/  /l-carnitine-concentrate.html
+Redirect 301  /vplab-sports-nutrition/l-carnitine/l-carnitine-1500/  /l-carnitine-1500.html
+Redirect 301  /vplab-sports-nutrition/l-carnitine/l-carnitine-2500/  /l-carnitine-2500.html
+Redirect 301  /vplab-sports-nutrition/l-carnitine/l-carnitine-capsules/  /l-carnitine-capsules.html
+Redirect 301  /vplab-sports-nutrition/l-carnitine/l-carnitine-3000/  /l-carnitine-3000.html
+Redirect 301  /vplab-sports-nutrition/fitness-drinks/fitactive-l-carnitine/  /fitactive-isotonic-drink.html
+Redirect 301  /vplab-sports-nutrition/fitness-drinks/fitactive/  /fitactive-isotonic-drink.html
+Redirect 301  /vplab-sports-nutrition/fitness-drinks/fitactive-coenzyme-q10/  /fitactive-isotonic-drink.html
+Redirect 301  /vplab-sports-nutrition/fitness-drinks/fit-active-isotonic-drink/  /fitactive-isotonic-drink.html
+Redirect 301  /vplab-sports-nutrition/bars/high-protein-bar/  /high-protein-bar.html
+Redirect 301  /vplab-sports-nutrition/bars/best-meal-replacement-bar/  /best-meal-replacement-bar.html
+Redirect 301  /vplab-sports-nutrition/bars/l-carnitine-bar/  /l-carnitine-fitness-bar.html
+Redirect 301  /vplab-sports-nutrition/bars/32-protein-bar/  /32-protein-bar.html
+Redirect 301  /vplab-sports-nutrition/bars/33-protein-bar/  /33-protein-bars.html
+Redirect 301  /vplab-sports-nutrition/bars/60-protein-bar/  /60-protein-bar.html
+Redirect 301  /vplab-sports-nutrition/bars/32-protein-best-meal-replacement/  /32-best-meal-replacement.html
+Redirect 301  /vplab-sports-nutrition/bars/low-carb-protein-bar/  /low-carb-protein-bar.html
+Redirect 301  /vplab-sports-nutrition/bars/lean-protein-and-fiber-bar/  /lean-protein-fiber-bar.html
+Redirect 301  /vplab-sports-nutrition/bars/energy-balance-fitness-bar/  /energy-balance-fitness-bar.html
+Redirect 301  /vplab-sports-nutrition/advanced-series/n.o.-starter-no-starter/  /vp5065463.html
+Redirect 301  /vplab-sports-nutrition/advanced-series/aminoplasma-/  /aminoplasma.html
+Redirect 301  /vplab-sports-nutrition/advanced-series/nitric-ignition/  /nitric-ignition.html
+Redirect 301  /vplab-sports-nutrition/endurance-series/ultimate-recovery/  /ultimate-recovery.html
+Redirect 301  /vplab-sports-nutrition/endurance-series/energy-gel/  /energy-gel.html
+Redirect 301  /vp-laboratory-health-and-wellness/slimming/cla-and-l-carnitine/  /cla-l-carnitine.html
+Redirect 301  /vp-laboratory-health-and-wellness/joint-health/absolute-joint/  /absolute-joint.html
+Redirect 301  /vp-laboratory-health-and-wellness/antioxidants/coenzyme-q10/  /coenzyme-q10.html
+Redirect 301  /vp-laboratory-health-and-wellness/antioxidants/super-greens/  /super-green.html
+Redirect 301  /vp-laboratory-health-and-wellness/antioxidants/curcumin-and-vitamin-d3/  /curcumin-d3.html
+Redirect 301  /vp-laboratory-health-and-wellness/fatty-acids/omega-3-6-9/  /omega-3-6-9.html
+Redirect 301  /vp-laboratory-health-and-wellness/fatty-acids/fish-oil/  /fish-oil.html
+Redirect 301  /vp-laboratory-health-and-wellness/fatty-acids/lecithin/  /lecithin.html
+Redirect 301  /vp-laboratory-health-and-wellness/immune/ultra-immune/  /ultra-immune.html
+Redirect 301  /vp-laboratory-health-and-wellness/for-liver/duobact/  /duobact.html
+Redirect 301  /vp-laboratory-health-and-wellness/joint-health/glucosamine-and-chondroitin/  /glucosamine-chondroitin.html
+
+Redirect 301  /vplab-sports-nutrition/gainers/  /vplab-products/vplab-gainer.html
+Redirect 301  /vplab-sports-nutrition/proteins/  /vplab-products/proteins.html
+Redirect 301  /vplab-sports-nutrition/amino-acids/  /vplab-products/amino-acids.html
+Redirect 301  /vplab-sports-nutrition/energy-drinks/  /vplab-products/energy-endurance.html
+Redirect 301  /vplab-sports-nutrition/joint-health/  /vplab-products/joint.html
+Redirect 301  /vplab-sports-nutrition/vitamins-and-minerals/  /vplab-products/vitamins.html
+Redirect 301  /vplab-sports-nutrition/fat-burners/  /vplab-products/weight-management.html
+Redirect 301  /vplab-sports-nutrition/l-carnitine/  /vplab-products/l-carnitine.html
+Redirect 301  /vplab-sports-nutrition/fitness-drinks/  /vplab-products/energy-endurance.html
+Redirect 301  /vplab-sports-nutrition/bars/  /vplab-products/protein-bars.html
+Redirect 301  /vplab-sports-nutrition/advanced-series/  /vplab-products/pre-workout-supplements.html
+Redirect 301  /vplab-sports-nutrition/endurance-series/  /vplab-products/pre-workout-supplements.html
+Redirect 301  /vplab-sports-nutrition/accessories/  /vplab-products/shakers-bottles-pill-cases.html
+Redirect 301  /vp-laboratory-health-and-wellness/slimming/  /vplab-products/weight-management/slimming.html
+Redirect 301  /vp-laboratory-health-and-wellness/joint-health/  /vplab-products/joint.html
+Redirect 301  /vp-laboratory-health-and-wellness/antioxidants/  /vplab-products/vitamins/antioxidants.html
+Redirect 301  /vp-laboratory-health-and-wellness/fatty-acids/  /vplab-products/fix-oil-omega.html
+Redirect 301  /vp-laboratory-health-and-wellness/immune/  /vplab-products/vitamins/immune.html
+Redirect 301  /vp-laboratory-health-and-wellness/for-liver/  /vplab-products/vitamins/prebiotics.html
+
+
+Redirect 301  /vplab-sports-nutrition/  /vplab-products/vse-produkty.html?product_line=333
+Redirect 301  /vp-laboratory-health-and-wellness/  /vplab-products/vse-produkty.html?product_line=334

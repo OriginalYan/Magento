@@ -1,0 +1,116 @@
+<script>
+gtm_impressions = [];
+gtm_details = [];
+gtm_promos = [];
+function gtm_product_click(p) {
+    if (window.google_tag_manager != undefined) {
+        dataLayer.push({
+            'event': 'productClick',
+            'ecommerce': {
+                'click': {
+                    'products': [{
+                        'name': p.name,
+                        'id': p.id,
+                        'price': p.price,
+                        'category': p.cat,
+                        'list': p.list,
+                        'position': p.position
+                    }]
+                }
+            },
+            'eventCallback': function() {
+                document.location = p.url
+            }
+        });
+        return false;
+    }
+    window.location.assign(p.url);
+    return true;
+}
+function gtm_add2cart_click(p, price, qty) {
+    dataLayer.push({
+        'event': 'addToCart',
+        'ecommerce': {
+            'currencyCode': p.currency,
+            'add': {
+                'products': [{
+                    'name': p.name,
+                    'id': p.id,
+                    'price': price,
+                    'category': p.cat,
+                    'quantity': qty
+                }]
+            }
+        },
+    });
+}
+function gtm_del_cart_click(pk, name, price, qty, cat) {
+    var pobj = {
+        'name': name,
+        'id': pk,
+        'price': price,
+        'quantity': qty
+    }
+    if (typeof cat != 'undefined') {
+        pobj['category'] = cat;
+    }
+    dataLayer.push({
+        'event': 'removeFromCart',
+        'ecommerce': {
+            'remove': {
+                'products': [ pobj ]
+            }
+        }
+    });
+}
+function gtm_promo_click(pk, name, creative, position, url) {
+    if (window.google_tag_manager != undefined) {
+        dataLayer.push({
+            'event': 'promotionClick',
+            'ecommerce': {
+                'promoClick': {
+                    'promotions': [{
+                        'name': name,
+                        'id': pk,
+                        'creative': creative,
+                        'position': position
+                    }]
+                }
+            },
+            'eventCallback': function() {
+                document.location = url
+            }
+        });
+        return false;
+    }
+    window.location.assign(url);
+    return true;
+}
+function gtm_checkout_shopping(items) {
+    dataLayer.push({
+        'event': 'checkout',
+        'ecommerce': {
+            'checkout': {
+                'actionField': {'step': 1},
+                'products': items
+            }
+        },
+    });
+}
+function gtm_checkout_payment(items) {
+    dataLayer.push({
+        'event': 'checkout',
+        'ecommerce': {
+            'checkout': {
+                'actionField': {'step': 2},
+                'products': items
+            }
+        },
+    });
+}
+
+</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKTMXH6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @copyright  Copyright (c) 2015 ET Web Solutions (http://etwebsolutions.com)
+ * @contacts   support@etwebsolutions.com
+ * @license    http://shop.etwebsolutions.com/etws-license-free-v1/   ETWS Free License (EFL1)
+ */
+-->
+<language xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../lib/internal/Magento/Framework/App/Language/package.xsd">
+    <code>ru_RU</code>
+    <vendor>etws</vendor>
+    <package>ru_ru</package>
+    <sort_order>100</sort_order>
+</language>

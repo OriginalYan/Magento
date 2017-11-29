@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <vplab_kliknpay>
+                <active>1</active>
+                <model>VpLab\KliknPay\Model\KliknPay</model>
+                <title>Credit Carts</title>
+                <order_status>processing</order_status>
+                <inline>0</inline>
+                <merchant_id />
+                <secret_word backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <cctypes>AE,VI,MC,DI,JCB,DC</cctypes>
+                <allowspecific>0</allowspecific>
+                <min_order_total>0.01</min_order_total>
+                <redirect_url>vplab/kliknpay/redirect</redirect_url>
+                <return_url>vplab/kliknpay/success</return_url>
+                <cancel_url>vplab/kliknpay/error</cancel_url>
+                <notification_url>vplab/kliknpay/notify</notification_url>
+                <cgi_url>https://www.klikandpay.com/paiement/check.pl</cgi_url>
+                <cgi_url_test>https://www.klikandpay.com/paiementtest/check.pl</cgi_url_test>
+            </vplab_kliknpay>
+        </payment>
+    </default>
+</config>

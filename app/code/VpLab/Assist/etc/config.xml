@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <vplab_assist>
+                <active>1</active>
+                <model>VpLab\Assist\Model\Assist</model>
+                <title>Credit Carts</title>
+                <order_status>processing</order_status>
+                <inline>0</inline>
+                <merchant_id />
+                <secret_word backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+                <cctypes>AE,VI,MC,DI,JCB,DC</cctypes>
+                <allowspecific>0</allowspecific>
+                <min_order_total>0.01</min_order_total>
+                <redirect_url>vplab/assist/redirect</redirect_url>
+                <return_url>vplab/assist/success</return_url>
+                <cancel_url>vplab/assist/error</cancel_url>
+                <cgi_url>https://test.paysecure.ru/pay/order.cfm</cgi_url>
+                <cgi_url_test>https://test.paysecure.ru/pay/order.cfm</cgi_url_test>
+                <check_url>https://payments280.paysecure.ru/orderstate/orderstate.cfm</check_url>
+                <check_login />
+                <check_password backend_model="Magento\Config\Model\Config\Backend\Encrypted" />
+            </vplab_assist>
+        </payment>
+    </default>
+</config>
