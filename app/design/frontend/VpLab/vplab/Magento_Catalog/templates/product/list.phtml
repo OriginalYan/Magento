@@ -220,9 +220,9 @@ $flex_grid = "";
                         <?php endif; ?>
                         <?php if ($showDescription):?>
                             <div class="product description product-item-description">
-                                <?php /* if ($_product->getAnnotation()) : ?>
+                                <?php if ($_product->getAnnotation()) : ?>
                                     <div class="product-item-annotation"><?= $_helper->productAttribute($_product, $_product->getAnnotation(), 'annotation') ?></div>
-                                <?php endif */ ?>
+                                <?php endif ?>
                                 <?php echo $_helper->productAttribute($_product, $_product->getShortDescription(), 'short_description') ?>
                                 <a href="<?php echo $_product->getProductUrl() ?>" title="<?php echo $_productNameStripped ?>"
                                    onclick='return gtm_product_click(<?= $ga_pobj ?>)'
