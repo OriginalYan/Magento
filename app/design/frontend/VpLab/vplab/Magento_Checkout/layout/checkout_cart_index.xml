@@ -9,8 +9,9 @@
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="checkout.cart.container">
-            <block class="VpLab\Checkout\Block\Cart\Gift" name="checkout.cart.gift" template="cart/gift.phtml" after="cart.discount" />
-            <block class="VpLab\Checkout\Block\Cart\Tip" name="checkout.cart.tip" template="cart/tip.phtml" after="checkout.cart.gift" />
+            <!-- <block class="VpLab\Checkout\Block\Cart\Gift" name="checkout.cart.gift" template="cart/gift.phtml" after="cart.discount" /> -->
+            <!-- <block class="VpLab\Checkout\Block\Cart\Tip" name="checkout.cart.tip" template="cart/tip.phtml" after="checkout.cart.gift" /> -->
+            <block class="VpLab\Checkout\Block\Cart\Tip" name="checkout.cart.tip" template="cart/tip.phtml" after="cart.discount" />
         </referenceContainer>
     </body>
 </page>
