@@ -66,13 +66,21 @@ class YandexKassa extends \Magento\Payment\Model\Method\AbstractMethod
     {
         $billing_address = $quote->getBillingAddress();
 
+        $order_id = $quote->getReservedOrderId();
+        if (!$order_id) {
+            $order_id = $quote->getOrigOrderId();
+        }
+        if (!$order_id) {
+            $order_id = $quote->getId();
+        }
+
         $params = [];
         $params['shopId'] = $this->getConfigData('shop_id');
         $params['scid'] = $this->getConfigData('scid');
         $params['sum'] = number_format(round($quote->getGrandTotal(), 2), 2, '.', '');
         $params['customerNumber'] = trim($billing_address->getFirstName() . ' ' . $billing_address->getLastName());
         $params['paymentType'] = '';
-        $params['orderNumber'] = $quote->getId();
+        $params['orderNumber'] = $order_id;
         $params['shopSuccessURL'] = $this->getSuccessUrl();
         $params['shopFailURL'] = $this->getCancelUrl();
         $params['cps_email'] = $quote->getCustomerEmail();
