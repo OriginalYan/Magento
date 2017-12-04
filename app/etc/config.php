@@ -123,6 +123,7 @@ return array (
     'VpLab_CategoryAttribute' => 0,
     'VpLab_Checkout' => 1,
     'VpLab_Contacts' => 1,
+    'VpLab_DDelivery' => 1,
     'VpLab_KliknPay' => 1,
     'VpLab_ShippingCourier' => 1,
     'VpLab_ShippingPost' => 1,
