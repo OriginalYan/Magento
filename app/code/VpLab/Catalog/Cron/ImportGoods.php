@@ -16,25 +16,27 @@ class ImportGoods
      */
     private $_logger;
 
-    private $_url;
+    /**
+     * @var \Magento\Framework\App\Config\ScopeConfigInterface
+     */
+    protected $_scopeConfig;
 
-    private $_ftp_host = '185.8.60.220';
-    private $_ftp_user = 'xml';
-    private $_ftp_password = 'Xml4573@t7';
-    private $_ftp_filename = '/vplabru/vp.xml';
+    private $_url;
 
     public function __construct(
         \Magento\CatalogInventory\Api\StockRegistryInterface $stockRegistry,
-        \Psr\Log\LoggerInterface $logger
+        \Psr\Log\LoggerInterface $logger,
+        \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig
     ) {
         $this->_stockRegistry = $stockRegistry;
         $this->_logger = $logger;
-
-        $this->_url = 'ftp://' . $this->_ftp_host . $this->_ftp_filename;
+        $this->_scopeConfig = $scopeConfig;
     }
 
     public function execute()
     {
+        $this->_url = 'ftp://' . $this->getConfig('ftp/host') . $this->getConfig('ftp/filename');
+
         // Load and parse XML from Remote Server
         $xml = $this->loadRemoteXml();
         if (!$xml) {
@@ -61,7 +63,7 @@ class ImportGoods
             CURLOPT_HEADER => false,
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_URL => $this->_url,
-            CURLOPT_USERPWD => $this->_ftp_user . ':' . $this->_ftp_password,
+            CURLOPT_USERPWD => $this->getConfig('ftp/user') . ':' . $this->getConfig('ftp/password'),
         ]);
         $result = curl_exec($p);
         curl_close($p);
@@ -101,11 +103,16 @@ class ImportGoods
                 $stockItem->setQty($cnt);
                 $stockItem->setIsInStock($cnt > 0);
 
-                $this->_logger->debug('SET ' . $cnt . ' for Product with SKU: ' . $sku);
+                // $this->_logger->debug('SET ' . $cnt . ' for Product with SKU: ' . $sku);
                 $this->_stockRegistry->updateStockItemBySku($sku, $stockItem);
             } catch (NoSuchEntityException $e) {
                 $this->_logger->warning($e->getMessage());
             }
         }
+    }
+
+    protected function getConfig($path)
+    {
+        return $this->_scopeConfig->getValue('import_goods/' . $path, \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
     }
 }

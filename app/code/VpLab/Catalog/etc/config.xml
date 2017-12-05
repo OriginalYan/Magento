@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <import_goods>
+            <ftp>
+                <host>185.8.60.220</host>
+                <user>xml</user>
+                <password>Xml4573@t7</password>
+                <filename>/vplabru/vp.xml</filename>
+            </ftp>
+        </import_goods>
+    </default>
+</config>
