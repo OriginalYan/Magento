@@ -42,12 +42,16 @@ class Item
     {
 		$value = array();
 		$requestVar = $item->getFilter()->getRequestVar();
-		if($requestValue = $this->_request->getParam($requestVar)){
+		if ($requestValue = $this->_request->getParam($requestVar)) {
 			$value = explode(',', $requestValue);
 		}
-
-		if(in_array($item->getValue(), $value)){
-			$value = array_diff($value, array($item->getValue()));
+		if (is_array($item->getValue())) {
+			$check_value = join('-', $item->getValue());
+		} else {
+			$check_value = $item->getValue();
+		}
+		if (in_array($check_value, $value)) {
+			$value = array_diff($value, array($check_value));
 		}
 
         $query = [$requestVar => count($value) ? implode(',', $value) : $item->getFilter()->getResetValue()];
