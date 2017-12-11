@@ -46,6 +46,24 @@
             <!-- ko template: getTemplate() --><!-- /ko -->
         <!-- /ko -->
 
+        <div class="actions">
+            <div class="secondary">
+                <a class="action viewcart" data-bind="attr: {href: shoppingCartUrl}">
+                    <span><!-- ko i18n: 'View and edit cart' --><!-- /ko --></span>
+                </a>
+            </div>
+        </div>
+
+        <!-- ko if: getCartParam('subtotal_value') >= 250000000000000 -->
+        <div class="actions">
+            <div class="secondary">
+                <a class="action viewcart gift" data-bind="attr: {href: shoppingCartUrl}">
+                    <span><!-- ko i18n: 'CHOOSE YOUR PRESENT' --><!-- /ko --></span>
+                </a>
+            </div>
+        </div>
+        <!-- /ko -->
+
         <!-- ko if: getCartParam('possible_onepage_checkout') -->
         <div class="actions">
             <div class="primary">
@@ -88,26 +106,6 @@
                 </div>
             </div>
         <!-- /ko -->
-    <!-- /ko -->
-
-    <!-- ko if: getCartParam('subtotal_value') >= 250000000000000 -->
-    <div class="actions">
-        <div class="secondary">
-            <a class="action viewcart gift" data-bind="attr: {href: shoppingCartUrl}">
-                <span><!-- ko i18n: 'CHOOSE YOUR PRESENT' --><!-- /ko --></span>
-            </a>
-        </div>
-    </div>
-    <!-- /ko -->
-
-    <!-- ko if: getCartParam('summary_count') -->
-    <div class="actions">
-        <div class="secondary">
-            <a class="action viewcart" data-bind="attr: {href: shoppingCartUrl}">
-                <span><!-- ko i18n: 'View and edit cart' --><!-- /ko --></span>
-            </a>
-        </div>
-    </div>
     <!-- /ko -->
 
     <div id="minicart-widgets" class="minicart-widgets">
