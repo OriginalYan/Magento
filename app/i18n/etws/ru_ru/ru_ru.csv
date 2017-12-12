@@ -7437,7 +7437,7 @@ Adding...,Добавляется...,module,Magento_Checkout
 "(for any order over €30)","(для любого заказа свыше 2500р)",module,Magento_Checkout
 "--- choose a gift ---","--- выберите подарок ---",module,Magento_Checkout
 "Choose sample you want and click the button &laquo;Add to Cart&raquo;","Выберите пробник, который желаете, и нажмите кнопку &laquo;В корзину&raquo;",module,Magento_Checkout
-"Free Shipping for all Orders Over €60","Бесплатная доставка для всех заказов свыше 3000 руб",module,Magento_Checkout
+"Free Shipping for all Orders Over €60","Бесплатная доставка для всех заказов свыше 3000 руб (для доставки по Москве)",module,Magento_Checkout
 "from", "от"
 "Stored Payment Methods","Сохраненные методы оплаты",module,Magento_Vault
 "You have no stored payment methods.","У вас нет сохраненных методов оплаты.",module,Magento_Vault
