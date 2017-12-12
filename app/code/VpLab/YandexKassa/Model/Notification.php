@@ -75,10 +75,10 @@ class Notification
 
     public function processNotification($params)
     {
-        if (isset($params['orderNumber']) and trim($params['orderNumber'])) {
-            $quote_id = trim($params['orderNumber']);
-        } elseif (isset($params['tnx_id']) and trim($params['tnx_id'])) {
+        if (isset($params['tnx_id']) and trim($params['tnx_id'])) {
             $quote_id = trim($params['tnx_id']);
+        // } elseif (isset($params['orderNumber']) and trim($params['orderNumber'])) {
+        //     $quote_id = trim($params['orderNumber']);
         } else {
             throw new Exception('[YANDEX] Unknown Order ID in notification request');
         }
