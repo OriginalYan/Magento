@@ -212,7 +212,7 @@ class Notification
                 $transaction->save();
 
                 // Magento\Sales\Model\Order\Email\Sender\InvoiceSender
-                $this->_invoiceSender->send($invoice);
+                $this->_invoiceSender->send($invoice, true);
 
                 $this->_order->addStatusHistoryComment(__('You notified customer about invoice #%1.', $invoice->getId()))
                     ->setIsCustomerNotified(true)
