@@ -214,9 +214,10 @@ class Notification
                 // Magento\Sales\Model\Order\Email\Sender\InvoiceSender
                 $this->_invoiceSender->send($invoice, true);
 
-                $this->_order->addStatusHistoryComment(__('You notified customer about invoice #%1.', $invoice->getId()))
-                    ->setIsCustomerNotified(true)
-                    ->save();
+                $message = sprintf('[YandexKassa Notification Processed] You notified customer about invoice #%s.', $invoice->getId());
+                $comment = $this->_order->addStatusHistoryComment($message);
+                $comment->setIsCustomerNotified(true);
+                $comment->save();
             }
         } catch (Exception $e) {
             throw new Exception(sprintf('Error Creating Invoice: "%s"', $e->getMessage()));
