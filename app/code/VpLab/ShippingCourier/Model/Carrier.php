@@ -63,8 +63,8 @@ class Carrier extends \Magento\Shipping\Model\Carrier\AbstractCarrier implements
             return false;
         }
 
-        $this->_logger->debug('DELIVERY: ' . $city);
-        $this->_logger->debug('ORDER PRICE: ' . $request->getBaseSubtotalInclTax());
+        // $this->_logger->debug('DELIVERY: ' . $city);
+        // $this->_logger->debug('ORDER PRICE: ' . $request->getBaseSubtotalInclTax());
 
         /** @var \Magento\Shipping\Model\Rate\Result $result */
         $result = $this->_rateResultFactory->create();
