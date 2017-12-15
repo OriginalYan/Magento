@@ -171,6 +171,12 @@ class YandexKassa extends \Magento\Payment\Model\Method\AbstractMethod
             $result['customerContact'] = '';
         }
 
+        if ($quote->getSubtotal() > $quote->getSubtotalWithDiscount()) {
+            $discount = ($quote->getSubtotal() - $quote->getSubtotalWithDiscount()) / $quote->getSubtotal();
+        } else {
+            $discount = 0;
+        }
+
         $data = [];
         $parents = [];
         foreach ($quote->getItemsCollection() as $item) {
@@ -191,6 +197,10 @@ class YandexKassa extends \Magento\Payment\Model\Method\AbstractMethod
                 $qty = $item->getQty();
             }
             $name = str_replace(['%', ':', '|'], ' ', $item->getProduct()->getName());
+            if ($discount > 0) {
+                $price = round($price * (1 - $discount), 2);
+                $name .= ' (Скидка ' . round($discount * 100) . '%)';
+            }
 
             $value = [
                 'quantity' => $qty,
@@ -218,7 +228,7 @@ class YandexKassa extends \Magento\Payment\Model\Method\AbstractMethod
             ];
         }
 
-        $result['items'] = $basket;
+        $result['items'] = $this->fixAmountsAfterDiscount($quote, $basket);
 
         return json_encode($result);
     }
@@ -226,5 +236,42 @@ class YandexKassa extends \Magento\Payment\Model\Method\AbstractMethod
     public function refund(\Magento\Payment\Model\InfoInterface $payment, $amount)
     {
         // TODO pass
+    }
+
+    protected function fixAmountsAfterDiscount($quote, $basket)
+    {
+        $totalAmount = round($quote->getGrandTotal(), 2);
+
+        $priceSum = 0;
+        foreach ($basket as $item) {
+            $priceSum += $item['quantity'] * $item['price']['amount'];
+        }
+        if ($priceSum == $totalAmount) {
+            return $basket;
+        }
+        $delta = $totalAmount - $priceSum;
+        $is_fixed = false;
+        foreach ($basket as $k => $v) {
+            if ($v['quantity'] != 1 or $v['price']['amount'] <= 0) {
+                continue;
+            }
+            $basket[$k]['price']['amount'] = number_format($basket[$k]['price']['amount'] + $delta, 2, '.', '');
+            $is_fixed = true;
+            break;
+        }
+        if (!$is_fixed) {
+            foreach ($basket as $k => $v) {
+                if (($delta * 100) % $v['quantity'] > 0 or $v['price']['amount'] <= 0) {
+                    continue;
+                }
+                $basket[$k]['price']['amount'] = number_format($basket[$k]['price']['amount'] + $delta / $v['quantity'], 2, '.', '');
+                $is_fixed = true;
+                break;
+            }
+        }
+        if (!$is_fixed) {
+            $basket[0]['price']['amount'] = number_format($basket[0]['price']['amount'] + $delta / $basket[0]['quantity'], 2, '.', '');
+        }
+        return $basket;
     }
 }
