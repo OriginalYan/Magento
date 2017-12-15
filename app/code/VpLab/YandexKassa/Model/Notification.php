@@ -144,6 +144,8 @@ class Notification
 
         $comment = $this->_createNotificationComment(sprintf('ORDER CREATED: "%s"', $params['invoiceId']));
         $comment->save();
+
+        $res = $this->_orderSender->send($this->_order, true);
     }
 
     protected function _createNotificationComment($comment)

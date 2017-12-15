@@ -185,13 +185,15 @@ class YandexKassa extends \Magento\Payment\Model\Method\AbstractMethod
             if ($item->getParentItemId() and isset($data[$item->getParentItemId()])) {
                 $p = $data[$item->getParentItemId()];
                 $price = $p->getPrice();
+                $qty = $p->getQty();
             } else {
                 $price = $item->getPrice();
+                $qty = $item->getQty();
             }
             $name = str_replace(['%', ':', '|'], ' ', $item->getProduct()->getName());
 
             $value = [
-                'quantity' => $item->getQty(),
+                'quantity' => $qty,
                 'price' => [
                     'amount' => number_format(round($price, 2), 2, '.', ''),
                 ],

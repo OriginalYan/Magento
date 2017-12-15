@@ -29,6 +29,11 @@
                 <currency>RUB</currency>
                 <require_billing_address>1</require_billing_address>
                 <payment_action>authorize_capture</payment_action>
+
+                <debug>1</debug>
+                <can_capture>1</can_capture>
+                <can_use_checkout>1</can_use_checkout>
+                <is_gateway>1</is_gateway>
             </vplab_yandex>
         </payment>
     </default>
