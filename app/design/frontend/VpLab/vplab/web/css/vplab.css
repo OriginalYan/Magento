@@ -493,6 +493,20 @@ div.owl-item .item {
   padding: 0 0 10px;
 }
 
+.filterproducts-tab .data.items > .item.title {
+  float: none;
+  width: 100%;
+}
+.filterproducts-tab .data.items > .item.title a.switch {
+  padding: 0;
+  border-left: 0;
+}
+.filterproducts-tab .data.items > .item.content {
+  float: none;
+  margin-top: 0;
+  margin-left: 0;
+}
+
 @media only screen and (max-width: 767px) {
   .slider-with-side .side-area,
   .page-main .columns .main .sidebar,
