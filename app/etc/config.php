@@ -4,6 +4,7 @@ return array (
   array (
     'Amasty_Base' => 1,
     'Amasty_InvisibleCaptcha' => 1,
+    'Lillik_PriceDecimal' => 1,
     'Magento_Store' => 1,
     'Magento_Directory' => 1,
     'Magento_AdvancedPricingImportExport' => 1,

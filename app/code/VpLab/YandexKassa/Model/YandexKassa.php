@@ -17,6 +17,7 @@ class YandexKassa extends \Magento\Payment\Model\Method\AbstractMethod
     protected $_supportedCurrencyCodes = ['RUB', 'RUR'];
     protected $_formBlockType = 'VpLab\YandexKassa\Block\Form\Checkout';
     protected $_infoBlockType = 'VpLab\YandexKassa\Block\Info\Checkout';
+    protected $_precision = 0;
 
     protected $orderSender;
     protected $httpClientFactory;
@@ -77,7 +78,7 @@ class YandexKassa extends \Magento\Payment\Model\Method\AbstractMethod
         $params = [];
         $params['shopId'] = $this->getConfigData('shop_id');
         $params['scid'] = $this->getConfigData('scid');
-        $params['sum'] = number_format(round($quote->getGrandTotal(), 2), 2, '.', '');
+        $params['sum'] = number_format(round($quote->getGrandTotal(), $this->_precision), 2, '.', '');
         $params['customerNumber'] = trim($billing_address->getFirstName() . ' ' . $billing_address->getLastName());
         $params['paymentType'] = '';
         $params['orderNumber'] = $order_id;
@@ -240,7 +241,7 @@ class YandexKassa extends \Magento\Payment\Model\Method\AbstractMethod
 
     protected function fixAmountsAfterDiscount($quote, $basket)
     {
-        $totalAmount = round($quote->getGrandTotal(), 2);
+        $totalAmount = round($quote->getGrandTotal(), $this->_precision);
 
         $priceSum = 0;
         foreach ($basket as $item) {

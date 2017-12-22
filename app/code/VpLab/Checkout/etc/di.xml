@@ -4,4 +4,7 @@
     <plugin name="gift_qty_checker" type="VpLab\Checkout\Plugin\GiftQtyCheckerPlugin" sortOrder="1" />
   </type>
   <preference for="Magento\Checkout\CustomerData\Cart" type="VpLab\Checkout\CustomerData\Cart" />
+  <preference for="Magento\Quote\Model\Cart\Totals" type="VpLab\Checkout\Model\Cart\Totals" />
+  <preference for="Magento\Quote\Model\Quote" type="VpLab\Checkout\Model\Quote" />
+  <preference for="Magento\Sales\Model\Order" type="VpLab\Checkout\Model\Order" />
 </config>
