@@ -302,6 +302,10 @@ div.owl-item .item {
   text-decoration: none;
 }
 
+.product-item-name {
+  min-height: 38px;
+}
+
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
   .category-annotation {
     top: 80px;
