@@ -305,6 +305,10 @@ div.owl-item .item {
 .products-grid .product-item-name {
   min-height: 38px;
 }
+.sidebar .related .content .block-actions .action.select {
+  display: inline-block;
+  height: initial !important;
+}
 
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
   .category-annotation {
