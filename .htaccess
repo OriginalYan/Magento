@@ -19,6 +19,107 @@ DirectoryIndex index.php
 <IfModule mod_ssl.c>
     SSLOptions StdEnvVars
 </IfModule>
+
+Redirect 301 /products/gainers/mass-builder.html /mass-builder.html
+Redirect 301 /products/proteins/pro5-protein.html /pro5-protein.html
+Redirect 301 /products/proteins/pure-iso-whey-2.html /pure-iso-whey.html
+Redirect 301 /products/proteins/100-platinum-whey.html /100-platinum-whey.html
+Redirect 301 /products/proteins/100-platinum-whey-new.html /100-platinum-whey.html
+Redirect 301 /products/proteins/casein.html /100-platinum-casein.html
+Redirect 301 /products/proteins/cola-protein.html /cola-protein.html
+Redirect 301 /products/proteins/juice-protein.html /juice-protein.html
+Redirect 301 /products/proteins/vegan-protein.html /vegan-protein.html
+Redirect 301 /products/proteins/lean-protein-shake.html /lean-protein-shake.html
+Redirect 301 /products/proteins/protein-spread.html /protein-spread.html
+Redirect 301 /products/amino-acids/amino-boost.html /amino-boost.html
+Redirect 301 /products/amino-acids/amino-liquid.html /amino-liquid.html
+Redirect 301 /products/amino-acids/amino-pro-9000.html /amino-pro-9000.html
+Redirect 301 /products/amino-acids/bcaa-chewable.html /bcaa-chewable.html
+Redirect 301 /products/amino-acids/bcaa-8-1-1.html /bcaa-8-1-1.html
+Redirect 301 /products/amino-acids/bcaa-ultra-pure.html /bcaa-ultra-pure.html
+Redirect 301 /products/amino-acids/l-glutamine.html /l-glutamine.html
+Redirect 301 /products/amino-acids/bcaa-2-1-1.html /bcaa-2-1-1.html
+Redirect 301 /products/amino-acids/bcaa-shot.html /bcaa-shot.html
+Redirect 301 /products/amino-acids/ultimate-amino.html /ultimate-amino.html
+Redirect 301 /products/creatine/pure-creatine.html /pure-creatine.html
+Redirect 301 /products/creatine/creatine-capsules.html /creatine-capsules.html
+Redirect 301 /products/testosteron/tribulus-terrestris.html /tribulus-terrestris.html
+Redirect 301 /products/pre-workour/guarana-liquid.html /guarana-liquid.html
+Redirect 301 /products/pre-workour/caffeine.html /caffeine.html
+Redirect 301 /products/joint/liquid-joint-formula.html /liquid-joint-formula.html
+Redirect 301 /products/joint/vplab-glucosamine-chondroitin-msm.html /glucosamine-chondroitin-msm.html
+Redirect 301 /products/vitamins-and-minerals/magnesium.html /magnesium-vitamin-c.html
+Redirect 301 /products/vitamins-and-minerals/ultra-men-s-sport.html /ultra-men-s-sport.html
+Redirect 301 /products/vitamins-and-minerals/ultra-women-s.html /ultra-women-s.html
+Redirect 301 /products/vitamins-and-minerals/daily-1.html /daily-1.html
+Redirect 301 /products/vitamins-and-minerals/zma.html /zma.html
+Redirect 301 /products/fat-burners/lipojets.html /lipojets.html
+Redirect 301 /products/fat-burners/lipojets-carnitine.html /lipojets-carnitine.html
+Redirect 301 /products/l-carnitine/l-carnitine-concentrate.html /l-carnitine-concentrate.html
+Redirect 301 /products/l-carnitine/l-carnitine-1500.html /l-carnitine-1500.html
+Redirect 301 /products/l-carnitine/l-carnitine-2500.html /l-carnitine-2500.html
+Redirect 301 /products/l-carnitine/l-carnitine-capsules.html /l-carnitine-capsules.html
+Redirect 301 /products/l-carnitine/l-carnitine-3000.html /l-carnitine-3000.html
+Redirect 301 /products/drinks/fit-active-isotonic-drink.html /fitactive-isotonic-drink.html
+Redirect 301 /products/bars/high-protein-bar.html /high-protein-bar.html
+Redirect 301 /products/bars/best-meal-replacement-bar.html /best-meal-replacement-bar.html
+Redirect 301 /products/bars/l-carnitine-bar.html /l-carnitine-fitness-bar.html
+Redirect 301 /products/bars/32-protein-bar.html /32-protein-bar.html
+Redirect 301 /products/bars/33-protein-bar.html /33-protein-bars.html
+Redirect 301 /products/bars/60-protein-bar.html /60-protein-bar.html
+Redirect 301 /products/bars/32-protein-best-meal-replacement-bar.html /32-best-meal-replacement.html
+Redirect 301 /products/bars/low-carb-protein-bar.html /low-carb-protein-bar.html
+Redirect 301 /products/bars/lean-protein-fiber-bar.html /lean-protein-fiber-bar.html
+Redirect 301 /products/bars/energy-fitness-bar.html /energy-balance-fitness-bar.html
+Redirect 301 /products/pre-workour/no-starter.html /vp5065463.html
+Redirect 301 /products/pre-workour/aminoplasma.html /aminoplasma.html
+Redirect 301 /products/pre-workour/nitric-ignition.html /nitric-ignition.html
+Redirect 301 /products/recovery/ultimate-recovery.html /ultimate-recovery.html
+Redirect 301 /products/pre-workour/energy-gel.html /energy-gel.html
+Redirect 301 /products/slimming/cla-l-carnitine.html /cla-l-carnitine.html
+Redirect 301 /products/joint/absolute-joint.html /absolute-joint.html
+Redirect 301 /products/antioxidants/coenzyme-q10.html /coenzyme-q10.html
+Redirect 301 /products/antioxidants/super-greens.html /super-green.html
+Redirect 301 /products/antioxidants/curcumin-vitamin-d3.html /curcumin-d3.html
+Redirect 301 /products/fatty-acids/omega-3-6-9.html /omega-3-6-9.html
+Redirect 301 /products/fatty-acids/fish-oil.html /fish-oil.html
+Redirect 301 /products/fatty-acids/lecithin.html /lecithin.html
+Redirect 301 /products/immunitet/ultra-immune.html /ultra-immune.html
+Redirect 301 /products/dlya-pecheni-i-zhkt/duobact.html /duobact.html
+Redirect 301 /products/joint/glucosamine-chondroitin.html /glucosamine-chondroitin.html
+Redirect 301 /products/shakers-bottles/drinking-bottle-gripper.html /water-bottle-gripper.html
+Redirect 301 /products/shakers-bottles/steel-bottle.html /stainless-steel-bottle-700-ml.html
+Redirect 301 /products/shakers-bottles/water-bottle-22-l.html /water-bottle-2-2.html
+Redirect 301 /products/shakers-bottles/pill-case.html /pill-case.html
+Redirect 301 /products/shakers-bottles/3-in-1-shaker.html /smart-3-in-1-shaker.html
+Redirect 301 /products/shakers-bottles/shaker-vplaboratory.html /shaker-with-inside-strainer.html
+Redirect 301 /products/shakers-bottles/shaker-500-ml.html /shaker-vplab-500-ml.html
+Redirect 301 /products/shakers-bottles/shaker-700-ml.html /shaker-vplab-700-ml.html
+
+Redirect 301 /products/sport /vplab-products/vse-produkty.html?product_line=333
+Redirect 301 /products/health /vplab-products/vse-produkty.html?product_line=334
+Redirect 301 /products/gainers /vplab-products/vplab-gainer.html
+Redirect 301 /products/proteins /vplab-products/proteins.html
+Redirect 301 /products/amino-acids /vplab-products/amino-acids.html
+Redirect 301 /products/joint /vplab-products/joint.html
+Redirect 301 /products/vitamins-and-minerals /vplab-products/vitamins.html
+Redirect 301 /products/fat-burners /vplab-products/weight-management.html
+Redirect 301 /products/l-carnitine /vplab-products/l-carnitine.html
+Redirect 301 /products/drinks /vplab-products/energy-endurance.html
+Redirect 301 /products/bars /vplab-products/protein-bars.html
+Redirect 301 /products/pre-workour /vplab-products/pre-workout-supplements.html
+Redirect 301 /products/accessories /vplab-products/shakers-bottles-pill-cases.html
+Redirect 301 /products/slimming /vplab-products/weight-management/slimming.html
+Redirect 301 /products/joint /vplab-products/joint.html
+Redirect 301 /products/antioxidants /vplab-products/vitamins/antioxidants.html
+Redirect 301 /products/fatty-acids /vplab-products/fix-oil-omega.html
+Redirect 301 /products/immunitet /vplab-products/vitamins/immune.html
+Redirect 301 /products/dlya-pecheni-i-zhkt /vplab-products/vitamins/prebiotics.html
+
+Redirect 301 /about.html /about
+Redirect 301 /contacts.html /contact
+
+
 <IfModule mod_rewrite.c>
     Options +FollowSymLinks
     RewriteEngine on

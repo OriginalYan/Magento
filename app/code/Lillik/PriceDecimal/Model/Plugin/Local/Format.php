@@ -29,6 +29,7 @@ class Format extends PriceFormatPluginAbstract
             $result['precision'] = $precision;
             $result['requiredPrecision'] = $precision;
         }
+        $result['groupSymbol'] = '';
 
         return $result;
     }

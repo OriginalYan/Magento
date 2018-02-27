@@ -1151,6 +1151,7 @@ Show,Показать,module,Magento_Catalog
 Loading...,Загружается...,module,Magento_Catalog
 "* Required Fields","* Обязательные поля",module,Magento_Catalog
 Availability,Доступность,module,Magento_Catalog
+"More Choices:","Вам может пригодиться:",module,Magento_Catalog
 "Terms and Conditions","Условия и Соглашения",module,Magento_CheckoutAgreements
 "Add New Condition","Добавить новое условие",module,Magento_CheckoutAgreements
 "Save Condition","Сохранить условие",module,Magento_CheckoutAgreements
