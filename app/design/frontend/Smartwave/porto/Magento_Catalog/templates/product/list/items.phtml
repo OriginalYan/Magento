@@ -204,7 +204,7 @@ $image_height = ($_category_config['ratio_height'])?$_category_config['ratio_hei
                 <?php if ($type == 'related'): ?>
                     <?php
                         $iterator ++;
-                        if($iterator % 2 == 1)
+                        if($iterator % 4 == 1)
                             echo '<div class="item product product-item" style="display: none;">';
                     ?>
                 <?php elseif ($type == 'upsell'): ?>
@@ -325,7 +325,7 @@ $image_height = ($_category_config['ratio_height'])?$_category_config['ratio_hei
                     </div>
                     <?php if ($type == 'related'): ?>
                     <?php
-                        if($iterator == count($items) || $iterator % 2 == 0)
+                        if($iterator == count($items) || $iterator % 4 == 0)
                             echo '</div>';
                     ?>
                     <?php else: ?>
