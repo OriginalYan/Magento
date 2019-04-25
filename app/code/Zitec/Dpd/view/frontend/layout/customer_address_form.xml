@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <head>
+        <js class="Zitec_Dpd::zitec_fieldlengths/validator.js"/>
+        <js class="Zitec_Dpd::zitec/dpd/postcode-autocompleter.js"/>
+        <css src="Zitec_Dpd::zitec/dpd/postcode-autocompleter.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Zitec\Dpd\Block\Postcode\Autocompleter" name="zitec_dpd-postcode_autocompleter"/>
+        </referenceContainer>
+    </body>
+</page>

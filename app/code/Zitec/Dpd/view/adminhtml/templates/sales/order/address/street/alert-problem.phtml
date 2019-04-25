@@ -1,0 +1,32 @@
+<?php
+$shippingAddress =  $this->getOrder()->getShippingAddress();
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+
+/** @var \Zitec\Dpd\Helper\Data $dpdHelper */
+$dpdHelper = $objectManager->create(\Zitec\Dpd\Helper\Data::class);
+
+$isValidStreet = $dpdHelper->checkAddressStreetLength($shippingAddress);
+
+?>
+<script type="text/javascript">
+    require([ 'jquery'], function($){
+
+        var isStreetLengthValid = '<?php echo (!empty($isValidStreet)) ? '1': '0'; ?>';
+
+        if (isStreetLengthValid != '1') {
+            $('.order-shipping-address .title').each(function (i, el) {
+                $(el).css('background', 'red');
+
+                $('.order-shipping-address address').each(function (i, el2) {
+                    $(el2).append('<div class="fieldset" style="color: #ff0000;"> <?php echo __(
+                        'DPD shipping carrier requirements: The length of address provided by your customer is too long. Please provide a maximum 70 characters length address (street field).'
+                    ); ?> </div>');
+                });
+
+            });
+        }
+
+    });
+
+</script>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Zitec_Dpd::dpd_backend" title="DPD carrier" translate="title" module="Zitec_Dpd" resource="Magento_Backend::system" sortOrder="150" />
+        <add id="Zitec_Dpd::shipping_methods" title="Shipping Methods" translate="title" module="Magento_Shipping" resource="Magento_Shipping::carriers" parent="Zitec_Dpd::dpd_backend" action="adminhtml/system_config/edit/section/carriers" />
+        <add id="Zitec_Dpd::shipping_settings" title="Shipping Settings" translate="title" module="Magento_Shipping" resource="Magento_Shipping::config_shipping" parent="Zitec_Dpd::dpd_backend" action="adminhtml/system_config/edit/section/shipping" />
+        <add id="Zitec_Dpd::payment_methods" title="Payment Methods" translate="title" module="Magento_Payment" resource="Magento_Payment::payment" parent="Zitec_Dpd::dpd_backend" action="adminhtml/system_config/edit/section/payment" />
+        <add id="Zitec_Dpd::postcode_updater" title="Postcode update manager" translate="title" module="Zitec_Dpd" resource="Magento_Backend::system" parent="Zitec_Dpd::dpd_backend" action="dpd/postcodes" />
+        <add id="Zitec_Dpd::table_rates" title="Table rates" translate="title" module="Zitec_Dpd" resource="Magento_Backend::system" parent="Zitec_Dpd::dpd_backend" action="dpd/tablerate/" />
+        <add id="Zitec_Dpd::report_price_vs_cost" title="Report price vs cost" translate="title" module="Zitec_Dpd" resource="Magento_Backend::system" parent="Zitec_Dpd::dpd_backend" action="dpd/profitreport" />
+    </menu>
+</config>

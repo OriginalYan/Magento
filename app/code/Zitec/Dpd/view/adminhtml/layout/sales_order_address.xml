@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <head>
+        <js class="Zitec_Dpd::zitec_fieldlengths/validator.js"/>
+        <js class="Zitec_Dpd::zitec/dpd/admin/PostcodeAutocompleter.js"/>
+    </head>
+    <body>
+        <referenceContainer name="before_body_end">
+            <block class="Zitec\Dpd\Block\Adminhtml\Sales\Order\Address\Form\Addresslength" name="zitec_addresslength"/>
+        </referenceContainer>
+    </body>
+</page>

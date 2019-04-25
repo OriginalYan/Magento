@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <listingToolbar name="listing_top">
+        <massaction name="listing_massaction">
+            <action name="close_dpd_manifest">
+                <argument name="data" xsi:type="array">
+                    <item name="config" xsi:type="array">
+                        <item name="type" xsi:type="string">close_dpd_manifest</item>
+                        <item name="label" xsi:type="string" translate="true">Close DPD Manifest</item>
+                        <item name="url" xsi:type="url" path="dpd/shipment/manifest"/>
+                        <item name="add_field" xsi:type="boolean">true</item>
+                        <item name="dataType" xsi:type="string">select</item>
+                        <item name="filter" xsi:type="string">text</item>
+                    </item>
+                </argument>
+            </action>
+        </massaction>
+    </listingToolbar>
+    <columns name="sales_order_shipment_columns">
+        <actionsColumn name="zitec_dpd_manifest" class="Zitec\Dpd\Block\Adminhtml\Sales\Shipment\Grid">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="label" xsi:type="string" translate="true">Manifest</item>
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="sortable" xsi:type="boolean">false</item>
+                    <item name="bodyTmpl" xsi:type="string">ui/grid/cells/html</item>
+                </item>
+            </argument>
+        </actionsColumn>
+    </columns>
+</listing>

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <head>
+        <js class="Zitec_Dpd::zitec/dpd/admin/sales.js"/>
+    </head>
+</page>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Sales\Block\Adminhtml\Order\View\Info">
+        <plugin name="postcode-validation-order-view-block" type="Zitec\Dpd\Model\Observer\PostcodeValidationOrder" sortOrder="1" />
+    </type>
+    <type name="Magento\Sales\Block\Adminhtml\Order\Address">
+        <plugin name="postcode-validation-order-address-block" type="Zitec\Dpd\Model\Observer\PostcodeValidationAddress" sortOrder="1" />
+    </type>
+    <type name="Magento\Shipping\Controller\Adminhtml\Order\Shipment\RemoveTrack">
+        <plugin name="remove-dpd-shipment-when-removing-track" type="Zitec\Dpd\Plugin\ShipmentRemoveTrack" sortOrder="1" />
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <plugin name="sales_shipment_additional_columns" type="Zitec\Dpd\Plugin\AddColumnsShipmentGridCollection" sortOrder="100" disabled="false" />
+    </type>
+</config>

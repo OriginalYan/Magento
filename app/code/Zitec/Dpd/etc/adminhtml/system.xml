@@ -1,0 +1,221 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="carriers">
+            <group id="zitecDpd" translate="label" type="text" sortOrder="150" showInDefault="1" showInWebsite="1" showInStore="1">
+
+                <label>DPD GeoPost By Zitec</label>
+                <!--<comment>
+                    <![CDATA[
+                    <div class="custom-options">
+                    <div style="margin-bottom:20px;">
+                        <strong style="color:#EA7601;">DPD GeoPost v1.0</strong>
+                        <br />
+                    </div>
+                    </div>
+                    ]]>
+                </comment>-->
+
+                <field id="active" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="wscountry" translate="label" type="select" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>DPD Country Select</label>
+                    <source_model>Zitec\Dpd\Model\Config\Source\Wscountry</source_model>
+                </field>
+                <field id="wsurlproduction" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Production WS URL</label>
+                    <comment><![CDATA[E.g. http://egproduction.dpd.com/IT4EMWebServices/eshop/]]></comment>
+                    <depends>
+                        <field id="wscountry">zOther</field>
+                    </depends>
+                </field>
+                <field id="wsurltest" translate="label comment" type="text" sortOrder="21" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Test WS URL</label>
+                    <comment><![CDATA[E.g. http://egtest.dpd.com/IT4EMWebServices/eshop/]]></comment>
+                    <depends>
+                        <field id="wscountry">zOther</field>
+                    </depends>
+                </field>
+                <field id="mode" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Production Mode</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <backend_model>Zitec\Dpd\Model\Config\Data\Mode</backend_model>
+                </field>
+                <field id="debug" translate="label" type="select" sortOrder="31" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Debug Mode</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <backend_model>Zitec\Dpd\Model\Config\Data\Mode</backend_model>
+                </field>
+                <field id="debugfile" translate="label" type="text" sortOrder="32" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Debug file</label>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="33" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Method Title</label>
+                </field>
+                <field id="name" translate="label" type="text" sortOrder="34" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Method Name</label>
+                </field>
+                <field id="username" translate="label" type="text" sortOrder="35" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Web Service Username</label>
+                </field>
+                <field id="password" translate="label" type="text" sortOrder="36" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Web Service Password</label>
+                </field>
+                <field id="connectionTimeout" translate="label comment" type="text" sortOrder="37" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Web Service Connection Timeout</label>
+                    <comment>
+                        <![CDATA[Set a timeout for connecting to the DPD web service in seconds.]]>
+                    </comment>
+                </field>
+                <field id="senderAddressId" translate="label" type="text" sortOrder="38" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Sender Address Id</label>
+                </field>
+                <field id="payerId" translate="label" type="text" sortOrder="39" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Payer Id</label>
+                </field>
+                <field id="services" translate="label comment" type="multiselect" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Service</label>
+                    <source_model>Zitec\Dpd\Model\Config\Source\Service</source_model>
+                    <comment>Select the services that you want to enable. Note that you must also define the shipping prices for these services in your shipping table rates (see below).</comment>
+                </field>
+                <field id="services_predict" translate="label comment" type="multiselect" sortOrder="41" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Service PREDICT</label>
+                    <source_model>Zitec\Dpd\Model\Config\Source\Servicepredict</source_model>
+                    <can_be_empty>1</can_be_empty>
+                    <comment>Select the services that have predict functionality.</comment>
+                </field>
+                <field id="export" translate="label" type="button" sortOrder="42" showInDefault="0" showInWebsite="1" showInStore="0">
+                    <label>Export Shipping Table Rates</label>
+                    <frontend_model>Zitec\Dpd\Block\Adminhtml\System\Config\Button\Export</frontend_model>
+                </field>
+                <field id="import" translate="label" type="button" sortOrder="43" showInDefault="0" showInWebsite="1" showInStore="0">
+                    <label>Import Shipping Table Rates</label>
+                    <backend_model>Zitec\Dpd\Model\Config\Data\Tablerate</backend_model>
+                </field>
+                <field id="postcode_autocomplete_checkout" translate="label" type="select" sortOrder="44" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Auto-correct the user postcode in checkout</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>Use this option to allow DPD shipment method even if the postcode is not valid. The post code will be automatically generated considering the city, region and street. In some cases the administrator will have to manually validate the postcode.</comment>
+                </field>
+                <field id="send_insurance_value" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Send insurance value</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
+        </section>
+        <!--<section id="shipping">
+            <group id="zitec_pickupaddress" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>DPD GeoPost Pickup Address</label>
+                <field id="name" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Name</label>
+                </field>
+                <field id="additionalname" translate="label" type="text" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Additional Name</label>
+                </field>
+                <field id="street" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Street</label>
+                </field>
+                <field id="city" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>City</label>
+                </field>
+                <field id="postcode" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Postcode</label>
+                </field>
+                <field id="country" translate="label" type="select" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Country</label>
+                    <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+                </field>
+                <field id="phone" translate="label" type="text" sortOrder="55" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Telephone</label>
+                </field>
+                <field id="email" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Email Address</label>
+                </field>
+            </group>
+        </section>-->
+        <section id="payment">
+            <group id="zitec_dpd_cashondelivery" translate="label" type="text" sortOrder="670" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Cash On Delivery for DPD GeoPost</label>
+                <comment>
+                    <![CDATA[<div class="custom-options">
+                        <div style="margin-bottom:20px;">
+                            <span style="color:#EA7601;">Important:</span> This payment method will only be available if you have activated the shipping method 'DPD GeoPost' and have specified values in the 'CashOnDelivery Surcharge' column of your table rates file.
+                            <br />
+                            <strong style="color:#EA7601;">Cash on Delivery for DPD GeoPost v1.0</strong>
+                            <br />
+                        </div>
+                    ]]>
+                </comment>
+                <field id="active" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="title" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                </field>
+                <field id="description" translate="label" type="textarea" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Title</label>
+                </field>
+                <field id="total_title" translate="label" type="text" sortOrder="4" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Surcharge Name</label>
+                </field>
+                <field id="order_status" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>New order status</label>
+                    <source_model>Zitec\Dpd\Model\Config\Source\Order\Status\Pendingpayment</source_model>
+                </field>
+                <field id="specificproducto" translate="label" type="multiselect" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Service</label>
+                    <source_model>Zitec\Dpd\Model\Payment\Cashondelivery\Source\Service</source_model>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+                <field id="cod_payment_type" translate="label comment" type="multiselect" sortOrder="55" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Payment Type</label>
+                    <source_model>Zitec\Dpd\Model\Payment\Cashondelivery\Source\Codpaymenttype</source_model>
+                    <comment>Select how customers will pay the courier.</comment>
+                </field>
+                <field id="payment_amount_type" translate="label comment" type="select" sortOrder="57" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Payment amount type</label>
+                    <source_model>Zitec\Dpd\Model\Payment\Cashondelivery\Source\AmountType</source_model>
+                    <comment>Choose the type of charge percentage of order amount or fixed price in case table rates is not defined for DPD shipping method.</comment>
+                </field>
+                <field id="payment_amount" translate="label" type="text" sortOrder="58" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Payment amount</label>
+                    <comment>This amount will be used to charge the customer if no records is loaded into table rates</comment>
+                </field>
+                <field id="allowspecific" translate="label" type="allowspecific" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Payment from Applicable Countries</label>
+                    <source_model>Magento\Payment\Model\Config\Source\Allspecificcountries</source_model>
+                </field>
+                <field id="specificcountry" translate="label" type="multiselect" sortOrder="61" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Payment from Specific Countries</label>
+                    <source_model>Zitec\Dpd\Model\Payment\Cashondelivery\Source\Country</source_model>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+
+                <!--
+                <allowspecific translate="label">
+                    <label>Payment from Applicable Countries</label>
+                    <frontend_type>allowspecific</frontend_type>
+                    <sort_order>60</sort_order>
+                    <source_model>adminhtml/system_config_source_payment_allspecificcountries</source_model>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                </allowspecific>
+                <specificcountry translate="label">
+                    <label>Payment from Specific Countries</label>
+                    <frontend_type>multiselect</frontend_type>
+                    <sort_order>61</sort_order>
+                    <source_model>zitec_dpd/payment_cashondelivery_source_country</source_model>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <can_be_empty>1</can_be_empty>
+                </specificcountry>-->
+
+            </group>
+        </section>
+    </system>
+</config>

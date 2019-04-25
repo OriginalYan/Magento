@@ -1,0 +1,17 @@
+{
+  "name": "Zitec/Dpd",
+  "description": "N/A",
+  "type": "magento2-module",
+  "version": "100.0.1",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Zitec\\Dpd\\": ""
+    },
+    "psr-0": {
+      "Zitec_Dpd_": "lib"
+    }
+  }
+}

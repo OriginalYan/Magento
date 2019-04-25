@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Sales:etc/pdf_file.xsd">
+    <totals>
+        <total name="zitec_dpd_cashondelivery_surcharge">
+            <title translate="true">Recargo contrareembolso</title>
+            <model>Zitec\Dpd\Model\Sales\Order\Pdf\Total\Cashondeliverysurchage</model>
+            <source_field>zitec_dpd_cashondelivery_surcharge</source_field>
+            <font_size>7</font_size>
+            <display_zero>0</display_zero>
+            <sort_order>410</sort_order>
+        </total>
+    </totals>
+</config>

@@ -20,9 +20,9 @@ return array (
       'default' => 
       array (
         'host' => 'localhost',
-        'dbname' => 'rutestvp_vplabru',
-        'username' => 'rutestvp_vplabru',
-        'password' => 'Y@%MOw@)$CLU4jQ',
+        'dbname' => 'magento',
+        'username' => 'root',
+        'password' => '',
         'model' => 'mysql4',
         'engine' => 'innodb',
         'initStatements' => 'SET NAMES utf8;',
@@ -38,7 +38,7 @@ return array (
     ),
   ),
   'x-frame-options' => 'SAMEORIGIN',
-  'MAGE_MODE' => 'production',
+  'MAGE_MODE' => 'developer',
   'cache_types' => 
   array (
     'config' => 1,

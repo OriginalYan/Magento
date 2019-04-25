@@ -1,0 +1,50 @@
+<?php
+
+
+?>
+
+<div class="content-header">
+    <table cellspacing="0">
+        <tr>
+            <td style="<?php echo $this->getHeaderWidth() ?>"><?php echo $this->getHeaderHtml() ?></td>
+            <td class="form-buttons"><?php echo $this->getButtonsHtml() ?></td>
+        </tr>
+    </table>
+</div>
+<div>
+    <?php echo $this->getChildHtml('store.switcher') ?>
+</div>
+<div>
+    <?php echo $this->getChildHtml('grid.filter.form') ?>
+</div>
+<div>
+    <?php echo $this->getGridHtml() ?>
+</div>
+<script type="text/javascript">
+    require(['jquery'], function ($) {
+        $('#filter_form_submit').click(function () {
+            switchStore($('#store_switcher'));
+        });
+
+        function switchStore(obj) {
+            var storeParam = obj.value ? 'store_ids/' + obj.value + '/' : '';
+            if (obj.switchParams) {
+                storeParam += obj.switchParams;
+            }
+
+            var formParam = ['period_date_from', 'period_date_to'];
+            var paramURL = 'showReport=1&';
+            var switchURL = '<?php echo $this->getAbsoluteGridUrl(['_current' => false]); ?>'.replace(/(store|group|website)\/\d+\//, '');
+
+            for (var i = 0; i < formParam.length; i++) {
+                var el = $('#' + formParam[i]);
+                if (el.val()) {
+                    paramURL += el.attr('name') + '=' + escape(el.val()) + '&';
+                }
+            }
+
+            setLocation(switchURL + storeParam + '?' + paramURL);
+        }
+    });
+
+</script>

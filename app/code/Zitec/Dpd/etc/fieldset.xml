@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:DataObject/etc/fieldset.xsd">
+    <scope id="global">
+        <fieldset id="sales_convert_quote_address">
+            <field name="zitec_dpd_cashondelivery_surcharge">
+                <aspect name="to_order" />
+            </field>
+            <field name="base_zitec_dpd_cashondelivery_surcharge">
+                <aspect name="to_order" />
+            </field>
+            <field name="zitec_dpd_cashondelivery_surcharge_tax">
+                <aspect name="to_order" />
+            </field>
+            <field name="base_zitec_dpd_cashondelivery_surcharge_tax">
+                <aspect name="to_order" />
+            </field>
+            <field name="valid_auto_postcode">
+                <aspect name="to_order_address" />
+            </field>
+            <field name="auto_postcode">
+                <aspect name="to_order_address" />
+            </field>
+        </fieldset>
+    </scope>
+</config>

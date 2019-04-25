@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="dpd" frontName="dpd">
+            <module name="Zitec_Dpd" />
+        </route>
+        <route id="printshippinglabel" frontName="printshippinglabel">
+            <module name="Zitec_Dpd" />
+        </route>
+        <route id="packedshipment" frontName="packedshipment">
+            <module name="Zitec_Dpd" />
+        </route>
+    </router>
+</config>

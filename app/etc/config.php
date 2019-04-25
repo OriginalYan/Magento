@@ -130,5 +130,6 @@ return array (
     'VpLab_ShippingCourier' => 1,
     'VpLab_ShippingPost' => 1,
     'VpLab_YandexKassa' => 1,
+    'Zitec_Dpd' => 1,
   ),
 );
