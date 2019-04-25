@@ -64,7 +64,8 @@ class Carrier extends \Magento\Shipping\Model\Carrier\AbstractCarrier implements
         }
 
         // $this->_logger->debug('DELIVERY: ' . $city);
-        // $this->_logger->debug('ORDER PRICE: ' . $request->getBaseSubtotalInclTax());
+        $this->_logger->debug('ORDER PRICE: ' . $request->getBaseSubtotalInclTax());
+        $this->_logger->debug('ORDER PRICE WITH DISCOUNT: ' . $request->getPackageValueWithDiscount());
 
         /** @var \Magento\Shipping\Model\Rate\Result $result */
         $result = $this->_rateResultFactory->create();
@@ -78,7 +79,10 @@ class Carrier extends \Magento\Shipping\Model\Carrier\AbstractCarrier implements
         $method->setMethod($this->getCarrierCode());
         $method->setMethodTitle($this->getConfigData('name'));
 
-        $total_price = $request->getBaseSubtotalInclTax();
+        $total_price = $request->getPackageValueWithDiscount();
+        if (!$total_price) {
+            $total_price = $request->getBaseSubtotalInclTax();
+        }
         if ($total_price >= $this->getConfigData('min_price')) {
             $amount = 0;
         } else {

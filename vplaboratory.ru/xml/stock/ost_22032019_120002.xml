@@ -1,0 +1,1613 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Ostatki>
+	<LINE>
+		<ARTNAME>!VPTestBoom  </ARTNAME>
+		<ARTDESC>!VPLAB Testoboom / 90 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>1400781</ARTNAME>
+		<ARTDESC>VPLAB Energy Oats Bar / 65 g / cherry-coconut</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>88079</ARTNAME>
+		<ARTDESC>VPLAB Biobar / 45 g / nuts &amp; seed</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>SSB0242</ARTNAME>
+		<ARTDESC>VPLAB Bottle for water / 750 ml / Black</ARTDESC>
+		<QuantityOrdered>3</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>SSB0243</ARTNAME>
+		<ARTDESC>VPLAB Bottle for water / 750 ml / Blue</ARTDESC>
+		<QuantityOrdered>1</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP_SportVit_2</ARTNAME>
+		<ARTDESC>VPLAB Ultra Men's Sport / 90 caplets &amp; Ultra Women's / 90 caplets bundle</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP_Vit_Omega_M</ARTNAME>
+		<ARTDESC>VPLAB Ultra Men's Sport / 90 caplets &amp; Omega 3-6-9 / 60 softgels bundle</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP_Vit_Omega_W</ARTNAME>
+		<ARTDESC>VPLAB Ultra Women's / 90 caplets &amp; Omega 3-6-9 60 softgels bundle</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP00883</ARTNAME>
+		<ARTDESC>VPLAB Ultra Immune / 30 caps</ARTDESC>
+		<QuantityOrdered>23</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP00911-02</ARTNAME>
+		<ARTDESC>VPLAB Cola Protein / 400 g</ARTDESC>
+		<QuantityOrdered>4</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP01V330</ARTNAME>
+		<ARTDESC>VPLAB 33% Protein bar / 45 g / Coconut</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP01V440</ARTNAME>
+		<ARTDESC>VPLAB 35% Protein bar / 45 g / yoghurt</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP01V550</ARTNAME>
+		<ARTDESC>VPLAB 60% Protein Bar / 100 g / Peanut</ARTDESC>
+		<QuantityOrdered>133</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP01V660</ARTNAME>
+		<ARTDESC>VPLAB 60 Protein Bar / 50 g / Peanut</ARTDESC>
+		<QuantityOrdered>76</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP0507-12</ARTNAME>
+		<ARTDESC>VPLAB Juice Protein / 400 g</ARTDESC>
+		<QuantityOrdered>3</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP1622031</ARTNAME>
+		<ARTDESC>VPLAB Energy Gel / 41 g / Citrus</ARTDESC>
+		<QuantityOrdered>96</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP1622041</ARTNAME>
+		<ARTDESC>VPLAB Energy Gel + caffeine / 41 g / Green apple</ARTDESC>
+		<QuantityOrdered>143</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP162449</ARTNAME>
+		<ARTDESC>VPLAB LipoJets Carnitine / 500 ml / Lime-Tea</ARTDESC>
+		<QuantityOrdered>17</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP162450</ARTNAME>
+		<ARTDESC>VPLAB L-Carnitine Concentrate / 500 ml / Lemongrass</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP162451</ARTNAME>
+		<ARTDESC>VPLAB L-Carnitine Concentrate / 500 ml / Tropical</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP162496</ARTNAME>
+		<ARTDESC>VPLAB L-Carnitine Concentrate / 500 ml / Cherry-Blueberry</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP18806</ARTNAME>
+		<ARTDESC>VPLAB Guarana / 20x25 ml / Lime</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP18806-1</ARTNAME>
+		<ARTDESC>VPLAB Guarana / 1 шт 25 мл / Lime</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191075</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein / 500 g / Cream-Vanilla</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191075-1</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein sachets / 30 g / Cream-Vanilla</ARTDESC>
+		<QuantityOrdered>7</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191075-2</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein / 1200 g / Cream-Vanilla</ARTDESC>
+		<QuantityOrdered>4</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191076</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein / 500 g / Chocolate-Nougat</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191076-1</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein sachets / 30 g / Chocolate-Nougat</ARTDESC>
+		<QuantityOrdered>3</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191076-2</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein / 1200 g / Chocolate-Nougat</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191077</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein / 500 g / Rhubarb-Strawberry</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191077-1</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein sachets / 30 g / Rhubarb-Strawberry</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191077-2</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein / 1200 g / Rhubarb-Strawberry</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191078</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein / 500 g / Cappuccino</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191078-1</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein sachets / 30 g / Cappuccino</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191078-2</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein / 1200 g / Cappuccino </ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191564</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder bag / 5 kg / Cream-Vanilla</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP1915641</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder sachets / 100 g / Cream-Vanilla</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191565</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder bag / 5 kg / Chocolate</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP1915651</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder sachets / 100 g / Chocolate</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP191566</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder bag / 5 kg / Strawberry-Yoghurt</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP1915661</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder sachets / 100 g / Strawberry-Yoghurt</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP192486</ARTNAME>
+		<ARTDESC>VPLAB Absolute Joint / 400 g / Raspberry</ARTDESC>
+		<QuantityOrdered>14</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP192585</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein / 500 g / Banana</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP1925851</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein sachets / 30 g / Banana</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP192586</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein / 500 g / Lemon-Curd</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP1925861</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein sachets / 30 g / Lemon-Curd</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP192587</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein / 500 g / Pineapple-Coconut</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP1925871</ARTNAME>
+		<ARTDESC>VPLAB PRO 5 Protein sachets / 30 g / Pineapple-Coconut</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP200381</ARTNAME>
+		<ARTDESC>VPLAB L-Carnitine 1500 / 1шт 25 ml / Pineapple</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP200381-1</ARTNAME>
+		<ARTDESC>VPLAB L-Carnitine 1500 / 20x25 ml / Pineapple</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP200389-1</ARTNAME>
+		<ARTDESC>VPLAB L-Carnitine Concentrate / 1000 ml / Tropical</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP201008</ARTNAME>
+		<ARTDESC>VPLAB Amino Boost / 20x25 ml / Blackcurrant</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP201008-1</ARTNAME>
+		<ARTDESC>VPLAB Amino Boost / 1 шт 25 ml / Blackcurrant</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP201069-1</ARTNAME>
+		<ARTDESC>VPLAB Joint Formula / 500 ml / Mango</ARTDESC>
+		<QuantityOrdered>13</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP201081-1</ARTNAME>
+		<ARTDESC>VPLAB Amino Liquid / 500 ml / Wild Berry</ARTDESC>
+		<QuantityOrdered>7</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP203012-1</ARTNAME>
+		<ARTDESC>VPLAB L-Carnitine 2500 / 7x25 ml / Very Berry</ARTDESC>
+		<QuantityOrdered>45</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP203036-1</ARTNAME>
+		<ARTDESC>VPLAB L-Carnitine Concentrate / 1000 ml / Cherry-Blueberry</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP203037-1</ARTNAME>
+		<ARTDESC>VPLAB L-Carnitine Concentrate / 1000 ml / Lemongrass</ARTDESC>
+		<QuantityOrdered>11</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP203052-1</ARTNAME>
+		<ARTDESC>VPLAB L-Carnitine 3000 / 7x25 ml / Citrus</ARTDESC>
+		<QuantityOrdered>12</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP206533-1</ARTNAME>
+		<ARTDESC>VPLAB Magnesium + Vit. C / 20х25 ml / Lemongrass</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP4065203</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein / 908 g / Chocolate</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP4065205</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein / 908 g / Strawberry</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP4065209</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein / 908 g / Vanilla</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5063993</ARTNAME>
+		<ARTDESC>VPLAB BCAA 8:1:1 / 300 g / Orange</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065200</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 908 g / Peach-mango</ARTDESC>
+		<QuantityOrdered>4</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065201</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 908 g / Strawberry-banana</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065202</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 908 g / Chocolate</ARTDESC>
+		<QuantityOrdered>3</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065203</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 908 g / Vanilla</ARTDESC>
+		<QuantityOrdered>3</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065204</ARTNAME>
+		<ARTDESC>VPLAB Pure Iso Whey / 908 g / Unflavored</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065210</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 2300 g / Peach-mango</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065211</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 2300 g / Strawberry-banana</ARTDESC>
+		<QuantityOrdered>7</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065212</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 2300 g / Chocolate</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065213</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 2300 g / Vanilla</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065218</ARTNAME>
+		<ARTDESC>VPLAB Pure Iso Whey / 908 g / Vanilla</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065460</ARTNAME>
+		<ARTDESC>VPLAB Ultimate Recovery / 900 g / Orange</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065461</ARTNAME>
+		<ARTDESC>VPLAB Ultimate Recovery / 900 g / Lemon</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065463</ARTNAME>
+		<ARTDESC>VPLAB N.O. Starter / 600 g / Blackcurrant</ARTDESC>
+		<QuantityOrdered>4</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065590</ARTNAME>
+		<ARTDESC>VPLAB Pure Iso Whey / 908 g / Chocolate</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5065591</ARTNAME>
+		<ARTDESC>VPLAB Pure Iso Whey / 908 g / Peach-mango</ARTDESC>
+		<QuantityOrdered>11</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5070320</ARTNAME>
+		<ARTDESC>VPLAB Aminoplasma / 500 g / Raspberry-kiwi</ARTDESC>
+		<QuantityOrdered>12</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP5070566</ARTNAME>
+		<ARTDESC>VPLAB Ultimate Amino / 375 g / Tropical</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP51970</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein / 908 g / Vanilla</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP53837</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Shake / 750 g / Chocolate</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP53929</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 750 g / Chocolate</ARTDESC>
+		<QuantityOrdered>6</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP53929-1</ARTNAME>
+		<ARTDESC>VPLAB Упаковка 100% Platinum Whey саше / 10*30 g / Chocolate</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP53943</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 750 g / Vanilla</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP53943-1</ARTNAME>
+		<ARTDESC>VPLAB Упаковка 100% Platinum Whey саше / 10*30 g / Vanilla</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP53967</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 750 g / Cookies&amp;Cream</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP53967-1</ARTNAME>
+		<ARTDESC>VPLAB Упаковка 100% Platinum Whey саше / 10*30 g / Cookies&amp;Cream</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP53981</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 750 g / Srawberry-Banana</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP53981-1</ARTNAME>
+		<ARTDESC>VPLAB Упаковка 100% Platinum Whey саше / 10*30 g / Srawberry-Banana</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54001</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 750 g / Cappuccino</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54001-1</ARTNAME>
+		<ARTDESC>VPLAB Упаковка 100% Platinum Whey саше / 10*30 g / Cappuccino</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54025</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 750 g / Unflavored</ARTDESC>
+		<QuantityOrdered>12</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54025-1</ARTNAME>
+		<ARTDESC>VPLAB Упаковка 100% Platinum Whey саше / 10*30 g / Unflavored</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54049</ARTNAME>
+		<ARTDESC>VPLAB BCAA Shot / 20*60 ml / orange</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54056</ARTNAME>
+		<ARTDESC>VPLAB Low Carb Protein Bar / 35 g / Vanilla</ARTDESC>
+		<QuantityOrdered>2</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54087</ARTNAME>
+		<ARTDESC>VPLAB Low Carb Protein Bar / 35 g / Red fruit</ARTDESC>
+		<QuantityOrdered>155</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54117</ARTNAME>
+		<ARTDESC>VPLAB Low Carb Protein Bar / 35 g / Caramel</ARTDESC>
+		<QuantityOrdered>69</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54148</ARTNAME>
+		<ARTDESC>VPLAB Low Carb Protein Bar / 35 g / Coconut</ARTDESC>
+		<QuantityOrdered>228</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54179</ARTNAME>
+		<ARTDESC>VPLAB Low Carb Protein Bar / 35 g / Chocolate</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54209</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Fiber Bar / 60 g / Strawberry</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54230</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Fiber Bar / 60 g / Cookies-cream</ARTDESC>
+		<QuantityOrdered>30</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54261</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Fiber Bar / 60 g / Coconut-Cashew</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54292</ARTNAME>
+		<ARTDESC>VPLAB BCAA 8:1:1 / 300 g / Cola</ARTDESC>
+		<QuantityOrdered>9</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54315</ARTNAME>
+		<ARTDESC>VPLAB BCAA 8:1:1 / 300 g / Raspberry</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54346</ARTNAME>
+		<ARTDESC>VPLAB BCAA Shot / 20*60 ml / blackcurrant</ARTDESC>
+		<QuantityOrdered>9</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54391</ARTNAME>
+		<ARTDESC>VPLAB Super Greens / 300 g / Green apple</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54414</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 750 g / Lemon Cheesecake</ARTDESC>
+		<QuantityOrdered>9</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54414-1</ARTNAME>
+		<ARTDESC>VPLAB Упаковка 100% Platinum Whey саше / 10*30 g / Lemon Cheesecake</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54438</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 750 g / Raspberry-White Chocolate</ARTDESC>
+		<QuantityOrdered>1</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54438-1</ARTNAME>
+		<ARTDESC>VPLAB Упаковка 100% Platinum Whey саше / 10*30 g / Raspberry-White Chocolate</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54452</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 750 g / Caramel Frappe</ARTDESC>
+		<QuantityOrdered>7</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54452-1</ARTNAME>
+		<ARTDESC>VPLAB Упаковка 100% Platinum Whey саше / 10*30 g / Caramel Frappe</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54476</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 750 g / Chocolate-Mint</ARTDESC>
+		<QuantityOrdered>13</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54476-1</ARTNAME>
+		<ARTDESC>VPLAB Упаковка 100% Platinum Whey саше / 10*30 g / Chocolate-Mint</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54490</ARTNAME>
+		<ARTDESC>VPLAB Glucosamine &amp; Chondroitin &amp; MSM / 90 tabs</ARTDESC>
+		<QuantityOrdered>20</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54520</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 1,2 kg / Chocolate</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54544</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Shake / 750 g / Cookies &amp; Cream</ARTDESC>
+		<QuantityOrdered>7</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54568</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Shake / 750 g / Cappuccino</ARTDESC>
+		<QuantityOrdered>9</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54575</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Shake / 750 g / Banana</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54605</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Shake / 750 g / Raspberry-white chocolate</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54612</ARTNAME>
+		<ARTDESC>VPLAB Drinking bottle Gripper / 750 ml / Pink</ARTDESC>
+		<QuantityOrdered>14</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54629</ARTNAME>
+		<ARTDESC>VPLAB Drinking bottle Gripper / 750 ml / Yellow</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54636</ARTNAME>
+		<ARTDESC>VPLAB Drinking bottle Gripper / 750 ml / Blue</ARTDESC>
+		<QuantityOrdered>16</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54643</ARTNAME>
+		<ARTDESC>VPLAB Drinking bottle Gripper / 750 ml / Black</ARTDESC>
+		<QuantityOrdered>6</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54698</ARTNAME>
+		<ARTDESC>VPLAB BCAA 8:1:1 / 300 g / Fruit Punch</ARTDESC>
+		<QuantityOrdered>18</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54711</ARTNAME>
+		<ARTDESC>VPLAB BCAA 8:1:1 / 300 g / Mango</ARTDESC>
+		<QuantityOrdered>1</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54735</ARTNAME>
+		<ARTDESC>VPLAB 33% Protein bar / 45 g / Caramel</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54766</ARTNAME>
+		<ARTDESC>VPLAB 32% Protein Bar / 45 g / Chocolate</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54797</ARTNAME>
+		<ARTDESC>VPLAB BCAA 8:1:1 / 300 g / Grapefruit</ARTDESC>
+		<QuantityOrdered>12</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54810</ARTNAME>
+		<ARTDESC>VPLAB Curcumine &amp; Vitamin D3 / 60 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54834</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey sachets / 30 g / Vanilla</ARTDESC>
+		<QuantityOrdered>6</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54858</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey sachets / 30 g / Unflavoured</ARTDESC>
+		<QuantityOrdered>9</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54872</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey sachets / 30 g / Chocolate</ARTDESC>
+		<QuantityOrdered>4</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54896</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey sachets / 30 g / Strawberry-Banana </ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54919</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey sachets / 30 g / Cappuccino</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54933</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey sachets / 30 g / Cookies Cream</ARTDESC>
+		<QuantityOrdered>6</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54957</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey sachets / 30 g / Chocolate-Mint </ARTDESC>
+		<QuantityOrdered>7</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54971</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey sachets / 30 g / Lemon Cheesecake</ARTDESC>
+		<QuantityOrdered>6</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP54995</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey sachets / 30 g / Caramel Frappe</ARTDESC>
+		<QuantityOrdered>6</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55015</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey sachets / 30 g / Raspberry-White chocolate</ARTDESC>
+		<QuantityOrdered>9</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55046</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 1,2 kg / Banana</ARTDESC>
+		<QuantityOrdered>6</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55060</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 1,2 kg / Cookies &amp; Cream</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55084</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 1,2 kg / Strawberry-Yoghurt </ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55107</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 1,2 kg / Vanilla</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55145</ARTNAME>
+		<ARTDESC>VPLAB Duobact / 10 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55169</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 100 g / Banana (1.2 kg pouches)</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55183</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 100 g / Cookies&amp;Cream (1.2 kg pouches)</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55244</ARTNAME>
+		<ARTDESC>VPLAB Water bottle / 2.2 L / Black</ARTDESC>
+		<QuantityOrdered>1</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55268</ARTNAME>
+		<ARTDESC>VPLAB Water bottle / 2.2 L / Pink</ARTDESC>
+		<QuantityOrdered>6</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55282</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 5 kg / Strawberry-Yoghurt NEW</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55299</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 5 kg / Vanilla NEW</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55305</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 5 kg / Chocolate NEW</ARTDESC>
+		<QuantityOrdered>6</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55312</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 100 g / Vanilla (1.2 kg pouches)</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55329</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 100 g / Strawberry-Yoghurt (1.2 kg pouches)</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55336</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 100 g / Chocolate (1.2 kg pouches)</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55404</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 5 kg / Banana</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55428</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 5 kg / Cookies &amp; Cream</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55442</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Shake / 50 g / Raspberry-white chocolate</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55473</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Shake / 50 g / Banana</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55480</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Shake / 50 g / Cookies &amp; Cream</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55503</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Shake / 50 g / Cappuccino</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55527</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Shake / 50 g / Chocolate</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55565</ARTNAME>
+		<ARTDESC>VPLAB Caffeine 200 mg / 90 tabs</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55589</ARTNAME>
+		<ARTDESC>VPLAB FitActive Isotonic Drink / 500 g / Pineapple</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55602</ARTNAME>
+		<ARTDESC>VPLAB FitActive Isotonic Drink / 500 g / Strawberry-Lime</ARTDESC>
+		<QuantityOrdered>6</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55626</ARTNAME>
+		<ARTDESC>VPLAB FitActive Isotonic Drink / 500 g / Mango</ARTDESC>
+		<QuantityOrdered>3</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55640</ARTNAME>
+		<ARTDESC>VPLAB FitActive Isotonic Drink / 500 g / Cola</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55664</ARTNAME>
+		<ARTDESC>VPLAB FitActive Isotonic Drink / 500 g / Tropical Fruit</ARTDESC>
+		<QuantityOrdered>18</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55688</ARTNAME>
+		<ARTDESC>VPLAB FitActive Isotonic Drink / 500 g / Watermelon</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55701</ARTNAME>
+		<ARTDESC>VPLAB ZMA / 90 caps</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55725</ARTNAME>
+		<ARTDESC>VPLAB Protein Mousse / 330 g / Chocolate</ARTDESC>
+		<QuantityOrdered>7</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55749</ARTNAME>
+		<ARTDESC>VPLAB Protein Mousse / 330 g / Caramel Toffee</ARTDESC>
+		<QuantityOrdered>6</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55763</ARTNAME>
+		<ARTDESC>VPLAB Low Carb Protein Bar / 35 g / Cheesecake</ARTDESC>
+		<QuantityOrdered>61</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55794</ARTNAME>
+		<ARTDESC>VPLAB Low Carb Protein Bar / 35 g / Dark Choconut</ARTDESC>
+		<QuantityOrdered>130</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55848</ARTNAME>
+		<ARTDESC>VPLAB Protein Spread / 250 g / Choco-Hazelnut Crunchy</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55862</ARTNAME>
+		<ARTDESC>VPLAB Hot Protein Cappuccino with Caffeine / 370 g</ARTDESC>
+		<QuantityOrdered>7</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP55886</ARTNAME>
+		<ARTDESC>VPLAB Hot Chocolate Protein / 370 g</ARTDESC>
+		<QuantityOrdered>7</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56357</ARTNAME>
+		<ARTDESC>VPLAB BCAA 2:1:1 / 300 g / Blood Orange</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56371</ARTNAME>
+		<ARTDESC>VPLAB BCAA 2:1:1 / 300 g / Cherry</ARTDESC>
+		<QuantityOrdered>11</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56395</ARTNAME>
+		<ARTDESC>VPLAB BCAA 2:1:1 / 300 g / Cola</ARTDESC>
+		<QuantityOrdered>7</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56418</ARTNAME>
+		<ARTDESC>VPLAB BCAA 2:1:1 / 300 g / Grape</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56432</ARTNAME>
+		<ARTDESC>VPLAB BCAA 2:1:1 / 300 g / Raspberry</ARTDESC>
+		<QuantityOrdered>11</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56456</ARTNAME>
+		<ARTDESC>VPLAB BCAA 2:1:1 / 300 g / Watermelon</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56470</ARTNAME>
+		<ARTDESC>VPLAB BCAA 2:1:1 / 300 g / Grapefruit</ARTDESC>
+		<QuantityOrdered>9</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56555</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 2300 g / Cookies &amp; Cream</ARTDESC>
+		<QuantityOrdered>6</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56579</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 2300 g / Cappuccino</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56593</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 2300 g / Unflavoured</ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56616</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 2300 g / Raspberry-White chocolate</ARTDESC>
+		<QuantityOrdered>4</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56630</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 2300 g / Caramel Frappe</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56654</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 2300 g / Chocolate-Mint </ARTDESC>
+		<QuantityOrdered>5</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56678</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 2300 g / Lemon Cheesecake</ARTDESC>
+		<QuantityOrdered>4</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56692</ARTNAME>
+		<ARTDESC>VPLAB Glucosamine &amp; Chondroitin &amp; MSM / 180 tabs</ARTDESC>
+		<QuantityOrdered>27</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56715</ARTNAME>
+		<ARTDESC>VPLAB Ultra Mens Sport Multivitamin Formula / 180 caps</ARTDESC>
+		<QuantityOrdered>22</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56739</ARTNAME>
+		<ARTDESC>VPLAB Ultra Women Multivitamin Formula / 180 caps</ARTDESC>
+		<QuantityOrdered>22</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56777</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein / 908 g / Strawberry (NEW)</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56791</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein / 908 g / Chocolate (NEW)</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56814</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein / 908 g / Vanilla (NEW)</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56838</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein sachet / 30 g / Vanilla</ARTDESC>
+		<QuantityOrdered>20</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56852</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein sachet / 30 g / Chocolate</ARTDESC>
+		<QuantityOrdered>20</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56876</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein sachet / 30 g / Strawberry</ARTDESC>
+		<QuantityOrdered>20</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56890</ARTNAME>
+		<ARTDESC>VPLAB Protein Spread / 250 g / Choco-Hazelnut Smooth</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56913</ARTNAME>
+		<ARTDESC>VPLAB Protein Spread / 250 g / White chocolate Smooth</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56937</ARTNAME>
+		<ARTDESC>VPLAB Protein Spread / 250 g / Hazelnut-White Chocolate Smooth</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56951</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein / 908 g / Raspberry-White Chocolate</ARTDESC>
+		<QuantityOrdered>10</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56975</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein / 908 g / Banana</ARTDESC>
+		<QuantityOrdered>9</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP56999</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein / 908 g / Blueberry Cheesecake</ARTDESC>
+		<QuantityOrdered>7</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57019</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein sachet / 30 g / Raspberry-White Chocolate</ARTDESC>
+		<QuantityOrdered>20</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57033</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein sachet / 30 g / Banana</ARTDESC>
+		<QuantityOrdered>20</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57057</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein sachet / 30 g / Blueberry Cheesecake</ARTDESC>
+		<QuantityOrdered>20</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57088</ARTNAME>
+		<ARTDESC>VPLAB Ultra Sleep / 60 caps</ARTDESC>
+		<QuantityOrdered>14</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57101</ARTNAME>
+		<ARTDESC>VPLAB Bones2Cardio / 30 caps</ARTDESC>
+		<QuantityOrdered>2</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57125</ARTNAME>
+		<ARTDESC>VPLAB Magnesium + B6 / 60 tablets</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57187</ARTNAME>
+		<ARTDESC>VPLAB FitActive Isotonic Drink / 20 g / Pineapple</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57200</ARTNAME>
+		<ARTDESC>VPLAB FitActive Isotonic Drink / 20 g / Cola</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57224</ARTNAME>
+		<ARTDESC>VPLAB FitActive Isotonic Drink / 20 g / Watermelon</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57248</ARTNAME>
+		<ARTDESC>VPLAB FitActive Isotonic Drink / 20 g / Mango</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57262</ARTNAME>
+		<ARTDESC>VPLAB FitActive Isotonic Drink / 20 g / Tropical Fruit</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57286</ARTNAME>
+		<ARTDESC>VPLAB FitActive Isotonic Drink / 20 g / Strawberry-Lime</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57484</ARTNAME>
+		<ARTDESC>VPLAB BCAA 2:1:1 / 300 g / Unflavoured</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57507</ARTNAME>
+		<ARTDESC>VPLAB BCAA 8:1:1 / 300 g / Unflavoured</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57521</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein / 908 g / Unflavored</ARTDESC>
+		<QuantityOrdered>9</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP57545</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein sachet / 30 g / Unflavoured</ARTDESC>
+		<QuantityOrdered>20</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58016</ARTNAME>
+		<ARTDESC>VPLAB Testoboom / 90 caps</ARTDESC>
+		<QuantityOrdered>40</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58047</ARTNAME>
+		<ARTDESC>VPLAB HMB+ / 120 caps</ARTDESC>
+		<QuantityOrdered>1</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58108</ARTNAME>
+		<ARTDESC>VPLAB Sambucus Echinacea / 60 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58122</ARTNAME>
+		<ARTDESC>VPLAB Prostate Support / 60 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58146</ARTNAME>
+		<ARTDESC>VPLAB AAKG / 90 tablets</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58160</ARTNAME>
+		<ARTDESC>VPLAB High Mineral Complex / 90 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58207</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder /2,3 kg / Cookies &amp; Cream</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58214</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 2,3 kg / Banana</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58221</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 2,3 kg / Chocolate</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58238</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 2,3 kg / Strawberry-Yoghurt </ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58245</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder / 2,3 kg / Vanilla</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58306</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 908 g / Cappuccino</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58320</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 908 g /Caramel Frappe</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58344</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 908 g / Chocolate-Mint</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58368</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 908 g / Cookies&amp;Cream</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58382</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 908 g / Lemon Cheesecake</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58405</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey / 908 g / Raspberry-White Chocolate</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58429</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey /908 g / Unflavored</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58443</ARTNAME>
+		<ARTDESC>VPLAB Pure Creatine sticks (30x3,5g) </ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58467</ARTNAME>
+		<ARTDESC>VPLAB Beta-alanine /90 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58665</ARTNAME>
+		<ARTDESC>Vplab MCT oil 500 ml</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58771</ARTNAME>
+		<ARTDESC>Vplab Metal water bottle 500 ml Raspberry</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58788</ARTNAME>
+		<ARTDESC>Vplab Metal water bottle 500 ml Purple</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58795</ARTNAME>
+		<ARTDESC>Vplab Metal water bottle 500 ml Yellow</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58801</ARTNAME>
+		<ARTDESC>Vplab Metal water bottle 500 ml Black</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58818</ARTNAME>
+		<ARTDESC>Vplab Metal water bottle 500 ml Blue</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58825</ARTNAME>
+		<ARTDESC>Vplab Metal water bottle 500 ml Lime</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58832</ARTNAME>
+		<ARTDESC>Vplab Metal water bottle 500 ml Peacock</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58849</ARTNAME>
+		<ARTDESC>Vplab Metal water bottle 500 ml Leopard</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58856</ARTNAME>
+		<ARTDESC>Vplab Metal water bottle 500 ml Wood</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58863</ARTNAME>
+		<ARTDESC>Vplab Metal water bottle 500 ml Military</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58870</ARTNAME>
+		<ARTDESC>Vplab Metal water bottle 750 ml Black</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP58887</ARTNAME>
+		<ARTDESC>Vplab Metal water bottle 600 ml Black</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP60009963</ARTNAME>
+		<ARTDESC>VPLAB Glucosamine &amp; Chondroitin / 60 tabs (срок до 31.03.2018)</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP60010582</ARTNAME>
+		<ARTDESC>VPLAB Lecithin / 60 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP60010603</ARTNAME>
+		<ARTDESC>VPLAB Fish Oil 1000 mg / 60 caps</ARTDESC>
+		<QuantityOrdered>109</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP60010645</ARTNAME>
+		<ARTDESC>VPLAB Omega 3-6-9 / 60 caps</ARTDESC>
+		<QuantityOrdered>91</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP6062355</ARTNAME>
+		<ARTDESC>VPLAB Amino Pro 9000 / 300 tabs</ARTDESC>
+		<QuantityOrdered>16</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP6062356</ARTNAME>
+		<ARTDESC>VPLAB BCAA Ultra Pure / 120 caps</ARTDESC>
+		<QuantityOrdered>9</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP6062395</ARTNAME>
+		<ARTDESC>VPLAB BCAA CHEWABLE / 60 tablets / fruit punch </ARTDESC>
+		<QuantityOrdered>13</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP608141</ARTNAME>
+		<ARTDESC>VPLAB CLA+L-Carnitine / 45 caps</ARTDESC>
+		<QuantityOrdered>19</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP609953</ARTNAME>
+		<ARTDESC>VPLAB Coenzyme Q10 100 mg / 30 caps</ARTDESC>
+		<QuantityOrdered>67</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP70322</ARTNAME>
+		<ARTDESC>VPLAB Vegan Protein / 700 g / Chocolate-Caramel</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP70323</ARTNAME>
+		<ARTDESC>VPLAB Vegan Protein / 700 g / Vanilla</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP70330</ARTNAME>
+		<ARTDESC>VPLAB Vegan Protein sachets / 30 g / Chocolate-Caramel</ARTDESC>
+		<QuantityOrdered>21</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP70331</ARTNAME>
+		<ARTDESC>VPLAB Vegan Protein sachets / 30 g / Vanilla</ARTDESC>
+		<QuantityOrdered>30</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP70415</ARTNAME>
+		<ARTDESC>VPLAB L-Carnitine Capsules / 90 caps</ARTDESC>
+		<QuantityOrdered>19</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP70416</ARTNAME>
+		<ARTDESC>VPLAB Creatine Capsules / 90 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP70419</ARTNAME>
+		<ARTDESC>VPLAB Nitric Ignition / 90 tabs</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP70735</ARTNAME>
+		<ARTDESC>VPLAB LipoJets / 100 caps</ARTDESC>
+		<QuantityOrdered>15</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP70797</ARTNAME>
+		<ARTDESC>VPLAB BCAA 2:1:1 / 500 g / Blood Orange</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP70798</ARTNAME>
+		<ARTDESC>VPLAB BCAA 2:1:1 / 500 g / Cherry</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP72201</ARTNAME>
+		<ARTDESC>VPLAB L-Glutamine / 300g</ARTDESC>
+		<QuantityOrdered>20</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP72211</ARTNAME>
+		<ARTDESC>VPLAB Pure Creatine / 500 g</ARTDESC>
+		<QuantityOrdered>13</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP72220</ARTNAME>
+		<ARTDESC>VPLAB FitActive Fitness Drink + L-carnitine / 500 g / Pineapple</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP72221</ARTNAME>
+		<ARTDESC>VPLAB FitActive Fitness Drink / 500 g / Tropical</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP72222</ARTNAME>
+		<ARTDESC>VPLAB FitActive Fitness Drink / 500 g / Lemon&amp;Grapefruit</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP72223</ARTNAME>
+		<ARTDESC>VPLAB FitActive Fitness Drink + CoQ10 / 500 g / Cranberry </ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP7401</ARTNAME>
+		<ARTDESC>VPLAB Shaker with inside strainer / 700 ml</ARTDESC>
+		<QuantityOrdered>9</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP7491</ARTNAME>
+		<ARTDESC>VPLAB Pill Master box / Blue</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP7492</ARTNAME>
+		<ARTDESC>VPLAB Pill Master box / Black</ARTDESC>
+		<QuantityOrdered>8</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP80713</ARTNAME>
+		<ARTDESC>VPLAB 40% High Protein bar / 50 g / Choco-vanilla</ARTDESC>
+		<QuantityOrdered>103</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP80714</ARTNAME>
+		<ARTDESC>VPLAB 40% High Protein bar / 50 g / Strawberry</ARTDESC>
+		<QuantityOrdered>6</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP80715</ARTNAME>
+		<ARTDESC>VPLAB 40% High Protein bar / 50 g / Banana</ARTDESC>
+		<QuantityOrdered>94</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP80758</ARTNAME>
+		<ARTDESC>VPLAB L-carnitine bar / 45 g / Pineapple</ARTDESC>
+		<QuantityOrdered>62</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP812768</ARTNAME>
+		<ARTDESC>VPLAB Tribulus Terrestris / 90 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP87760</ARTNAME>
+		<ARTDESC>VPLAB Best Meal Replacement Bar / 60 g / Caramel</ARTDESC>
+		<QuantityOrdered>81</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP87761</ARTNAME>
+		<ARTDESC>VPLAB 40% High Protein bar / 100 g  / Choco-vanilla</ARTDESC>
+		<QuantityOrdered>153</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP88268</ARTNAME>
+		<ARTDESC>VPLAB 40% High Protein bar / 100 g / Banana</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP88269</ARTNAME>
+		<ARTDESC>VPLAB 40% High Protein bar / 100 g  / Strawberry</ARTDESC>
+		<QuantityOrdered>71</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP88341</ARTNAME>
+		<ARTDESC>VPLAB Energy Balance fitness Bar / 35 g / Chocolate</ARTDESC>
+		<QuantityOrdered>61</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP88342</ARTNAME>
+		<ARTDESC>VPLAB Energy Balance fitness Bar / 35 g / Banana</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP88382</ARTNAME>
+		<ARTDESC>VPLAB Energy Balance fitness Bar / 35 g / caramel</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP88780</ARTNAME>
+		<ARTDESC>VPLAB Best Meal Replacement Bar / 60 g / Chocolate-Orange</ARTDESC>
+		<QuantityOrdered>49</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP89544</ARTNAME>
+		<ARTDESC>VPLAB Best Meal Replacement Bar / 60 g / blueberry-yoghurt</ARTDESC>
+		<QuantityOrdered>60</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP89862</ARTNAME>
+		<ARTDESC>VPLAB Energy Balance fitness Bar / 35 g / Cookies</ARTDESC>
+		<QuantityOrdered>34</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPBCAA-Gr+Cl</ARTNAME>
+		<ARTDESC>VPLAB BCAA 2:1:1 / 300 g / Grape + BCAA 2:1:1 / 300 g / Cola</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP-CASEIN-BOX</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Casein sachet box</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPDaily+BoxBlue</ARTNAME>
+		<ARTDESC>VPLAB Daily 1 / 100 caplets + Pill Master box / Blue</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPGl+UM-90</ARTNAME>
+		<ARTDESC>VPLAB Glucosamine &amp; Chondroitin &amp; MSM / 90 tabs + Ultra Mens Sport Multivitamin Formula / 90 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPGlu+UltraM</ARTNAME>
+		<ARTDESC>VPLAB Glucosamine &amp; Chondroitin &amp; MSM / 180 tabs + Ultra Mens Sport Multivitamin Formula / 180 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPL0001</ARTNAME>
+		<ARTDESC>VPLAB Ultra Women Multivitamin Formula / 90 caps+VPLAB Ultra Mens Sport Multivitamin Formula / 90 ca</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPL0002</ARTNAME>
+		<ARTDESC>VPLAB Ultra Women Multivitamin Formula / 90 caps+VPLAB Omega 3-6-9 / 60 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPL0003</ARTNAME>
+		<ARTDESC>VPLAB Ultra Mens Sport Multivitamin Formula / 90 caps+VPLAB Omega 3-6-9 / 60 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPL0004</ARTNAME>
+		<ARTDESC>VPLAB BCAA Ultra Pure / 120 caps+VPLAB Creatine Capsules / 90 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP-LEAN-PROTEIN-BOX</ARTNAME>
+		<ARTDESC>VPLAB Lean Protein Shake sachet box</ARTDESC>
+		<QuantityOrdered>2</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPLipo+Nitric</ARTNAME>
+		<ARTDESC>VPLAB LipoJets / 100 caps + Nitric Ignition / 90 tabs</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP-MASS-BILDER-BOX</ARTNAME>
+		<ARTDESC>VPLAB Mass Builder sachet box</ARTDESC>
+		<QuantityOrdered>2</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VP-PLATINUM-WHEY</ARTNAME>
+		<ARTDESC>VPLAB 100% Platinum Whey sachets</ARTDESC>
+		<QuantityOrdered>4</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPSprd-W+Cr</ARTNAME>
+		<ARTDESC>VPLAB Protein Spread / White chocolate Smooth + Protein Spread / Choco-Hazelnut Crunchy / 250 g</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPT00590-02</ARTNAME>
+		<ARTDESC>VPLAB Ultra Mens Sport Multivitamin Formula / 90 caps</ARTDESC>
+		<QuantityOrdered>46</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPT00591-02</ARTNAME>
+		<ARTDESC>VPLAB Ultra Women Multivitamin Formula / 90 caps</ARTDESC>
+		<QuantityOrdered>47</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPT01075-01</ARTNAME>
+		<ARTDESC>VPLAB Daily 1 / 100 caplets</ARTDESC>
+		<QuantityOrdered>21</QuantityOrdered>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPTS1107</ARTNAME>
+		<ARTDESC>VPLAB Shaker with blender ball / 500 ml </ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPTS1234</ARTNAME>
+		<ARTDESC>VPLAB Shaker with blender ball / 700 ml</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPTS1323</ARTNAME>
+		<ARTDESC>VPLAB Shaker 3-in-1 / 600 ml </ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPUM+UW-180</ARTNAME>
+		<ARTDESC>VPLAB Ultra Mens Sport Multivitamin Formula / 180 caps + Ultra Women Multivitamin Formula / 180 caps</ARTDESC>
+		<QuantityOrdered/>
+	</LINE>
+	<LINE>
+		<ARTNAME>VPWM-79</ARTNAME>
+		<ARTDESC>VPLAB Stainless steel bottle / 700 ml</ARTDESC>
+		<QuantityOrdered>22</QuantityOrdered>
+	</LINE>
+</Ostatki>

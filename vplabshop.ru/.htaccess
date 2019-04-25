@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^vplabshop\.ru$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.vplabshop\.ru$
+RewriteRule ^/?$ "https\:\/\/vplaboratory\.ru\/" [R=301,L]
+

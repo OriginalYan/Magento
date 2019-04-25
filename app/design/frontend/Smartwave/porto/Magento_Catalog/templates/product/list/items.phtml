@@ -86,7 +86,7 @@ switch ($type = $block->getType()) {
             $limit = $block->getItemLimit('upsell');
             $shuffle = 0;
             $columns = "columns4";
-            
+
             $showWishlist = false;
             $showCompare = false;
             $showCart = false;
@@ -125,7 +125,7 @@ switch ($type = $block->getType()) {
             $title = __('More Choices:');
             $items = $block->getItems();
             $columns = "columns4";
-            
+
             $showWishlist = true;
             $showCompare = false;
             $showCart = true;
@@ -259,7 +259,7 @@ $image_height = ($_category_config['ratio_height'])?$_category_config['ratio_hei
                         <?php endif; ?>
                         <?php endif; ?>
 
-                        <?php /* @escapeNotVerified */ echo $block->getProductPrice($_item); ?>
+                        <?php /* @escapeNotVerified */ echo preg_replace('/data-price-type="finalPrice"/', 'data-price-type=""', $block->getProductPrice($_item)); ?>
 
                             <?php if (!$_item->isComposite() && $_item->isSaleable() && $type == 'related'): ?>
                                 <?php if (!$_item->getRequiredOptions()): ?>
@@ -340,7 +340,7 @@ $image_height = ($_category_config['ratio_height'])?$_category_config['ratio_hei
     <script type="text/javascript">
         require([
             'jquery',
-            'owl.carousel/owl.carousel.min'            
+            'owl.carousel/owl.carousel.min'
         ], function ($) {
             $(".products-related .owl-carousel").owlCarousel({
                 nav:false,

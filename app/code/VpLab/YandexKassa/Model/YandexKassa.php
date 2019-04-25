@@ -210,6 +210,8 @@ class YandexKassa extends \Magento\Payment\Model\Method\AbstractMethod
                 ],
                 'tax' => 4,
                 'text' => $name,
+                'paymentMethodType' => 'full_prepayment',
+                'paymentSubjectType' => 'commodity',
             ];
             $basket[] = $value;
         }
@@ -226,6 +228,8 @@ class YandexKassa extends \Magento\Payment\Model\Method\AbstractMethod
                 ],
                 'tax' => 4,
                 'text' => $shipping_method,
+                'paymentMethodType' => 'full_prepayment',
+                'paymentSubjectType' => 'service',
             ];
         }
 

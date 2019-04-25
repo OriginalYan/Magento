@@ -126,6 +126,7 @@ return array (
     'VpLab_Contacts' => 1,
     'VpLab_DDelivery' => 1,
     'VpLab_KliknPay' => 1,
+    'VpLab_Removekeywords' => 1,
     'VpLab_ShippingCourier' => 1,
     'VpLab_ShippingPost' => 1,
     'VpLab_YandexKassa' => 1,

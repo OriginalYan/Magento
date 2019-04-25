@@ -5016,6 +5016,8 @@ Remove,Удалить,module,Magento_Checkout
 "Review & Payments","Оплата",module,Magento_Checkout
 Next,Следующий,module,Magento_Checkout
 "Sorry, no quotes are available for this order at this time","К сожалению, для этого заказа нет доступных методов доставки",module,Magento_Checkout
+"The cost of delivery to the regions is calculated when invoicing.","Стоимость доставки в регионы рассчитывается при выставлении счета.",module,Magento_Checkout
+"The cost will be added to the total cost of the order.","Стоимость будет прибавлена к общей стоимости заказа.",module,Magento_Checkout
 "Order Summary","Резюме заказа",module,Magento_Checkout
 "Item in Cart","шт. в корзине",module,Magento_Checkout
 "Items in Cart","шт. в корзине",module,Magento_Checkout

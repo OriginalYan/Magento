@@ -630,3 +630,7 @@ div.owl-item .item {
     display: none !important;
   }
 }
+
+.footer-bottom .social-icons {
+  margin-right: 30px;
+}

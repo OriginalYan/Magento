@@ -35,6 +35,8 @@ class ImportGoods
 
     public function execute()
     {
+        // return;  // 2018-09-06 Temp.stop
+
         $this->_url = 'ftp://' . $this->getConfig('ftp/host') . $this->getConfig('ftp/filename');
 
         // Load and parse XML from Remote Server
@@ -46,6 +48,7 @@ class ImportGoods
 
         // Select Quantities for products
         $qty = $this->collectQuantity($xml);
+        print_r($qty);
 
         // Update products
         $this->updateProductQty($qty);
@@ -57,7 +60,47 @@ class ImportGoods
             $this->_logger->error('Empty or missed Remote URL');
             return false;
         }
+
+        // get listining
         $p = curl_init();
+        curl_setopt_array($p, [
+            CURLOPT_TRANSFERTEXT => true,
+            CURLOPT_HEADER => false,
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_URL => $this->_url,
+            CURLOPT_USERPWD => $this->getConfig('ftp/user') . ':' . $this->getConfig('ftp/password'),
+        ]);
+        $result = curl_exec($p);
+        if (!trim($result)) {
+            curl_close($p);
+            return false;
+        }
+        $files = [];
+        foreach (explode("\n", $result) as $row) {
+            $parts = explode(" ", trim($row));
+            $files[] = trim($parts[count($parts) - 1]);
+        }
+        if (!$files) {
+            curl_close($p);
+            return false;
+        }
+        // print_r($files);
+
+        $filename = null;
+        foreach ($files as $item) {
+            if (preg_match('/ost_' . date('dmY') . '_/', $item)) {
+                $filename = $item;
+                break;
+            }
+        }
+        $this->_logger->debug('Import goods from: ' . $filename);
+        if (!$filename) {
+            curl_close($p);
+            return false;
+        }
+
+        $this->_url .= $filename;
+
         curl_setopt_array($p, [
             CURLOPT_TRANSFERTEXT => true,
             CURLOPT_HEADER => false,
@@ -78,9 +121,10 @@ class ImportGoods
     private function collectQuantity($xml)
     {
         $result = [];
-        foreach ($xml->Товар as $item) {
-            $sku = trim($item->Артикул);
-            $cnt = $this->fixQty($item->Остаток);
+        foreach ($xml->LINE as $item) {
+            $sku = trim($item->ARTNAME);
+            $cnt = $this->fixQty($item->QuantityOrdered);
+            // print($sku . ' = ' . $cnt . "\n");
             if (isset($result[$sku])) {
                 $this->_logger->info('Duplicated SKU: ' . $sku);
                 continue;
@@ -99,11 +143,12 @@ class ImportGoods
     {
         foreach ($qty as $sku => $cnt) {
             try {
+                print('SET ' . $cnt . ' for Product with SKU: ' . $sku . "\n");
                 $stockItem = $this->_stockRegistry->getStockItemBySku($sku);
                 $stockItem->setQty($cnt);
                 $stockItem->setIsInStock($cnt > 0);
 
-                // $this->_logger->debug('SET ' . $cnt . ' for Product with SKU: ' . $sku);
+                $this->_logger->debug('SET ' . $cnt . ' for Product with SKU: ' . $sku);
                 $this->_stockRegistry->updateStockItemBySku($sku, $stockItem);
             } catch (NoSuchEntityException $e) {
                 $this->_logger->warning($e->getMessage());

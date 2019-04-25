@@ -3,10 +3,10 @@
     <default>
         <import_goods>
             <ftp>
-                <host>185.8.60.220</host>
-                <user>xml</user>
+                <host>91.220.43.200</host>
+                <user>xml@vplaboratory.ru</user>
                 <password>Xml4573@t7</password>
-                <filename>/vplabru/vp.xml</filename>
+                <filename>/stock/</filename>
             </ftp>
         </import_goods>
     </default>
