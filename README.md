@@ -7,6 +7,8 @@
     1)web/secure/base_url(old - https://vplaboratory.ru/)
     1)web/unsecure/base_link_url(old - https://vplaboratory.ru/)
     1)web/unsecure/base_url(old - https://vplaboratory.ru/)
+    
+UPDATE core_config_data SET value = 'http://vplaboratory.loc' WHERE value = 'https://vplaboratory.ru/'; <br>
 
 
 2)файл app>etc>env.php(поменять данные бд и mage mode на production)
