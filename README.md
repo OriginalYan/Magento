@@ -22,7 +22,7 @@ UPDATE core_config_data SET value = 'http://vplaboratory.loc' WHERE value = 'htt
   'MAGE_MODE' => 'production',
 
 
-3)в базе данных изменить value на 1
+3)в базе данных изменить value на 1 <br>
 UPDATE core_config_data SET value = 0 WHERE path = 'dev/static/sign'; <br>
 UPDATE core_config_data SET value = 0 WHERE path = 'dev/css/minify_files'; <br>
 UPDATE core_config_data SET value = 0 WHERE path = 'dev/css/merge_css_files'; <br>
