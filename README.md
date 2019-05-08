@@ -21,6 +21,11 @@
 
 
 3)в базе данных изменить value на 1
-UPDATE core_config_data SET value = 0 WHERE path = 'dev/static/sign'
+UPDATE core_config_data SET value = 0 WHERE path = 'dev/static/sign';
+UPDATE core_config_data SET value = 0 WHERE path = 'dev/css/minify_files';
+UPDATE core_config_data SET value = 0 WHERE path = 'dev/css/merge_css_files';
+UPDATE core_config_data SET value = 0 WHERE path = 'dev/js/merge_files';
+UPDATE core_config_data SET value = 0 WHERE path = 'dev/js/minify_files';
+UPDATE core_config_data SET value = 0 WHERE path = 'dev/js/enable_js_bundling';
 
 
